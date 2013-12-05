@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+      <%= javascript_include_tag 'jquery-2.0.3', 'jquery-ujs' , 'application' %>
+         <!-- Bootstrap -->
+      <%#= stylesheet_link_tag "bootstrap.min.css" %>
+    <%= stylesheet_link_tag "bootstrap.css" %>
+    <%= stylesheet_link_tag "application.css" %>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/datepicker.css">
+    <style type="text/css">
+        #bottompane
+        {
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+            vertical-align: middle;
+
+        }
+        #bottompane h2, h1 {
+          margin-bottom: 50px;
+        }
+
+        .input select {
+
+          width: 90px;
+        }
+      .input {
+
+        display: inline;
+      }
+
+      select.input {
+      /*align:left;*/
+        width: 90px;
+        
+     }
+
+    .editform input, textarea, select {
+      margin-left: 20px;
+    }
+    .editform label, span {
+      float: left;
+      text-align: right;
+      width:120px;
+    }
+  
+    </style>
+        <%= javascript_include_tag :defaults %>
+        <%= javascript_include_tag 'bootstrap-datepicker' %>
+        <%= javascript_include_tag 'bootstrap-dropdown' %>
+        <%= javascript_include_tag 'bootstrap' %>
+   
+    <title>Rashmi's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    
+
+    </head>
+    <body>
+    
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+       <%= render :partial => 'services/header' %>
+    </div>
+  </div>
+</div>      
+<%= yield %>

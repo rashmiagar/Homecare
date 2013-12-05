@@ -1,0 +1,34 @@
+
+
+<span class = "help-inline"><%= flash[:notice] %> </span>
+<table id="labortable" class="table table-hover">
+<thead>
+<tr>
+	<th><b>Request No.</b></th>
+	<th><b>Service</b></th>
+	<th><b>Date</b></th>
+	<th><b>Time</b></th>
+	<th><b>Status</b></th>
+	<th><b></b></th>
+</tr>
+</thead>
+<tbody>
+<% @requests.each do |req| %>
+	<tr>
+		<td><%= req.transaction_id %></td>
+		<td><%= TypesOfService.getname(req.service_id) %></td>
+		<td><%= req.date%></td>
+		<td><%= req.time%></td>
+		<td><%= req.status %></td>
+		<% if req.status == 'open' %>
+			<td><%= link_to_remote "Cancel", :url => request_path(req), :confirm => 'Are you sure?',:method => :delete %> | <%= link_to "View", request_path(req.transaction_id) %></td>
+		<% elsif req.status == 'closed' %>
+			<td><%= link_to "Feedback", new_feedback_path+"?id=#{req.transaction_id}" %> | <%= link_to "View", request_path(req.transaction_id) %></td>
+		<%  else %>
+			<td><%= link_to "View", request_path(req.transaction_id) %></td>
+		<% end %>
+	
+	</tr>
+<% end %>
+</tbody>
+</table>

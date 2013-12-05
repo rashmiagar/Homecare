@@ -1,0 +1,1400 @@
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+2013/07/01 12:45:48 [error] 5065#0: *314 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /login HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3001", referrer: "http://admin.dashboard.local:3001/login"
+[ pid=5142 thr=-610256678 file=utils.rb:176 time=2013-07-01 12:45:48.611 ]: *** Exception SyntaxError in application (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:46: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+  map.connect ':controller/:action/:id'
+               ^) (process 5142, thread #<Thread:0xb74071b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=5030 thr=-610256678 file=utils.rb:176 time=2013-07-01 12:45:52.647 ]: *** Exception SyntaxError in PhusionPassenger::ClassicRails::ApplicationSpawner (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:46: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+  map.connect ':controller/:action/:id'
+               ^) (process 5030, thread #<Thread:0xb74071b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+	from /home/rashmi/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=5028 thr=3062401856 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-01 12:46:04.456 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+[ pid=5028 thr=3062602560 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-01 14:38:09.831 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+"rashmi"
+"rashmi"
+"rashmi"
+"d"
+"d"
+/home/rashmi/Documents/Ruby_programs/LoggerApp/app/views/login/home.html.erb:61: warning: don't put space before argument parentheses
+"d"
+/home/rashmi/Documents/Ruby_programs/LoggerApp/app/views/login/home.html.erb:61: warning: don't put space before argument parentheses
+"d"
+"d"
+""
+[ pid=5028 thr=3063405376 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-01 15:57:39.253 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+""
+""
+""
+""
+""
+""
+""
+""
+""
+sigin action
+"rashmi"
+"rashmi"
+User saved
+"rashmi"
+"rashmi1"
+User saved
+"rashmi"
+User saved
+"rashmi"
+User saved
+"rashmi1"
+User saved
+sigin action
+[ pid=13960 thr=-610256678 file=utils.rb:176 time=2013-07-01 17:11:23.445 ]: *** Exception NoMethodError in application (undefined method `collection' for #<ActionController::Routing::RouteSet::Mapper:0xb6837834>) (process 13960, thread #<Thread:0xb74071b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:56:in `method_missing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `__send__'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `method_missing'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:51
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:532:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:528:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+2013/07/01 17:11:23 [error] 5065#0: *924 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /login HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3001", referrer: "http://admin.dashboard.local:3001/login/create_user"
+[ pid=5030 thr=-610256678 file=utils.rb:176 time=2013-07-01 17:11:29.560 ]: *** Exception NoMethodError in PhusionPassenger::ClassicRails::ApplicationSpawner (undefined method `collection' for #<ActionController::Routing::RouteSet::Mapper:0xb663381c>) (process 5030, thread #<Thread:0xb74071b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:56:in `method_missing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `__send__'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `method_missing'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:51
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:532:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:528:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+	from /home/rashmi/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=5028 thr=3065412416 file=ext/nginx/HelperAgent.cpp:933 time=2013-07-01 17:11:29.686 ]: Uncaught exception in PassengerServer client thread:
+   exception: write() failed: Broken pipe (32)
+   backtrace:
+     in 'void Client::handleRequest(Passenger::FileDescriptor&)' (HelperAgent.cpp:828)
+     in 'void Client::threadMain()' (HelperAgent.cpp:952)
+
+[ pid=5028 thr=3065613120 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-01 17:11:37.477 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+sigin action
+2013/07/01 17:21:17 [error] 5065#0: *985 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /login HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3001"
+[ pid=16256 thr=-610256678 file=utils.rb:176 time=2013-07-01 17:21:17.048 ]: *** Exception NoMethodError in application (undefined method `collection' for #<ActionController::Routing::RouteSet::Mapper:0xb68fc2d8>) (process 16256, thread #<Thread:0xb74071b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:56:in `method_missing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `__send__'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `method_missing'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:51
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:532:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:528:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+2013/07/01 17:21:18 [error] 5065#0: *985 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /login HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3001"
+[ pid=16516 thr=-610256678 file=utils.rb:176 time=2013-07-01 17:21:18.012 ]: *** Exception NoMethodError in application (undefined method `collection' for #<ActionController::Routing::RouteSet::Mapper:0xb66051ec>) (process 16516, thread #<Thread:0xb74071b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:56:in `method_missing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `__send__'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `method_missing'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:51
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:532:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:528:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+2013/07/01 17:21:18 [error] 5065#0: *985 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /login HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3001"
+[ pid=16518 thr=-610256678 file=utils.rb:176 time=2013-07-01 17:21:18.988 ]: *** Exception NoMethodError in application (undefined method `collection' for #<ActionController::Routing::RouteSet::Mapper:0xb6603ba8>) (process 16518, thread #<Thread:0xb74071b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:56:in `method_missing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `__send__'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `method_missing'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:51
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:532:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:528:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+2013/07/01 17:23:20 [error] 5065#0: *991 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /login HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3001"
+[ pid=16573 thr=-610256678 file=utils.rb:176 time=2013-07-01 17:23:20.696 ]: *** Exception NoMethodError in application (undefined method `collection' for #<ActionController::Routing::RouteSet::Mapper:0xb6602564>) (process 16573, thread #<Thread:0xb74071b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:56:in `method_missing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `__send__'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `method_missing'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:51
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:532:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:528:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+2013/07/01 17:23:21 [error] 5065#0: *991 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /login HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3001"
+[ pid=16575 thr=-610256678 file=utils.rb:176 time=2013-07-01 17:23:21.500 ]: *** Exception NoMethodError in application (undefined method `collection' for #<ActionController::Routing::RouteSet::Mapper:0xb6600f34>) (process 16575, thread #<Thread:0xb74071b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:56:in `method_missing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `__send__'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `method_missing'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:51
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:532:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:528:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+2013/07/01 17:26:19 [error] 5065#0: *997 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /login HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3001"
+[ pid=16693 thr=-610256678 file=utils.rb:176 time=2013-07-01 17:26:19.950 ]: *** Exception NoMethodError in application (undefined method `collection' for main:Object) (process 16693, thread #<Thread:0xb74071b4>):
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:51
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:532:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:528:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+2013/07/01 17:26:20 [error] 5065#0: *997 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /login HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3001"
+[ pid=16695 thr=-610256678 file=utils.rb:176 time=2013-07-01 17:26:20.744 ]: *** Exception NoMethodError in application (undefined method `collection' for main:Object) (process 16695, thread #<Thread:0xb74071b4>):
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:51
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:532:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:528:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+2013/07/01 17:26:21 [error] 5065#0: *997 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /login HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3001"
+[ pid=16697 thr=-610256678 file=utils.rb:176 time=2013-07-01 17:26:21.510 ]: *** Exception NoMethodError in application (undefined method `collection' for main:Object) (process 16697, thread #<Thread:0xb74071b4>):
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:51
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:532:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:528:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+2013/07/01 17:26:53 [error] 5065#0: *997 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /login HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3001"
+[ pid=16712 thr=-610256678 file=utils.rb:176 time=2013-07-01 17:26:53.070 ]: *** Exception NoMethodError in application (undefined method `collection' for #<ActionController::Routing::RouteSet::Mapper:0xb65fb0ac>) (process 16712, thread #<Thread:0xb74071b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:56:in `method_missing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `__send__'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `method_missing'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:51
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:532:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:528:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+2013/07/01 17:26:53 [error] 5065#0: *997 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /login HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3001"
+[ pid=16714 thr=-610256678 file=utils.rb:176 time=2013-07-01 17:26:53.839 ]: *** Exception NoMethodError in application (undefined method `collection' for #<ActionController::Routing::RouteSet::Mapper:0xb65f9a54>) (process 16714, thread #<Thread:0xb74071b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:56:in `method_missing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `__send__'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `method_missing'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:51
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:532:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:528:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+2013/07/01 17:27:31 [error] 5065#0: *997 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /login HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3001"
+[ pid=16732 thr=-610256678 file=utils.rb:176 time=2013-07-01 17:27:31.165 ]: *** Exception NoMethodError in application (undefined method `collection' for #<ActionController::Routing::RouteSet::Mapper:0xb65f83c0>) (process 16732, thread #<Thread:0xb74071b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:56:in `method_missing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `__send__'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/option_merger.rb:20:in `method_missing'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:45
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:532:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/core_ext/object/misc.rb:81:in `with_options'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:528:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:44
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+nil
+nil
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+""
+""
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+"4"
+[ pid=11449 thr=3062213440 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-02 17:33:58.192 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+"4"
+"4"
+"4"
+"4"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+"4"
+"4"
+sigin action
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+sigin action
+"#<Userdetails id: 4, username: \"rashmi\", password: \"rashmi\", firstname: \"rashmi\", lastname: \"agarwal\", birthday: nil, email: \"rashmiagar@gmail.com\", phone: \"\">"
+[ pid=12018 thr=-610434858 file=utils.rb:176 time=2013-07-11 17:10:04.917 ]: *** Exception Gem::LoadError in PhusionPassenger::ClassicRails::ApplicationSpawner (can't activate rails (= 2.3.17, runtime), already activated rails-3.2.13. Make sure all dependencies are added to Gemfile.) (process 12018, thread #<Thread:0xb73b01ac>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370@global/gems/bundler-1.2.0/lib/bundler/rubygems_integration.rb:157:in `gem'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:60:in `load_rails_gem'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:54:in `load_initializer'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:38:in `run'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:11:in `boot!'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:114
+	from /home/rashmi/Desktop/LoggerApp/config/environment.rb:7:in `require'
+	from /home/rashmi/Desktop/LoggerApp/config/environment.rb:7
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=12270 thr=-610178858 file=utils.rb:176 time=2013-07-11 17:12:27.884 ]: *** Exception Gem::LoadError in PhusionPassenger::ClassicRails::ApplicationSpawner (can't activate rails (= 2.3.17, runtime), already activated rails-3.2.13. Make sure all dependencies are added to Gemfile.) (process 12270, thread #<Thread:0xb742d1ac>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370@global/gems/bundler-1.2.0/lib/bundler/rubygems_integration.rb:157:in `gem'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:60:in `load_rails_gem'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:54:in `load_initializer'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:38:in `run'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:11:in `boot!'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:114
+	from /home/rashmi/Desktop/LoggerApp/config/environment.rb:7:in `require'
+	from /home/rashmi/Desktop/LoggerApp/config/environment.rb:7
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=12459 thr=-610332458 file=utils.rb:176 time=2013-07-11 17:16:46.299 ]: *** Exception Gem::LoadError in PhusionPassenger::ClassicRails::ApplicationSpawner (can't activate rails (= 2.3.17, runtime), already activated rails-3.2.13. Make sure all dependencies are added to Gemfile.) (process 12459, thread #<Thread:0xb73e21ac>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370@global/gems/bundler-1.2.0/lib/bundler/rubygems_integration.rb:157:in `gem'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:60:in `load_rails_gem'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:54:in `load_initializer'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:38:in `run'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:11:in `boot!'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:114
+	from /home/rashmi/Desktop/LoggerApp/config/environment.rb:7:in `require'
+	from /home/rashmi/Desktop/LoggerApp/config/environment.rb:7
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=12636 thr=-610266918 file=utils.rb:176 time=2013-07-11 17:18:43.449 ]: *** Exception LoadError in PhusionPassenger::ClassicRails::ApplicationSpawner (no such file to load -- initializer) (process 12636, thread #<Thread:0xb74021b4>):
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:55:in `require'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:55:in `load_initializer'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:38:in `run'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:11:in `boot!'
+	from /home/rashmi/Desktop/LoggerApp/config/boot.rb:114
+	from /home/rashmi/Desktop/LoggerApp/config/environment.rb:7:in `require'
+	from /home/rashmi/Desktop/LoggerApp/config/environment.rb:7
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=12831 thr=-610410278 file=utils.rb:176 time=2013-07-11 17:23:26.248 ]: *** Exception PhusionPassenger::UnknownError in PhusionPassenger::ClassicRails::ApplicationSpawner (You have requested:
+  rails = 2.3.17
+
+The bundle currently has rails locked at 3.2.13.
+Try running `bundle update rails` (Bundler::GemNotFound)) (process 12831, thread #<Thread:0xb73bc1b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370@global/gems/bundler-1.2.0/lib/bundler/resolver.rb:287:in `resolve'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370@global/gems/bundler-1.2.0/lib/bundler/resolver.rb:161:in `start'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370@global/gems/bundler-1.2.0/lib/bundler/resolver.rb:128:in `resolve'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370@global/gems/bundler-1.2.0/lib/bundler/resolver.rb:127:in `catch'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370@global/gems/bundler-1.2.0/lib/bundler/resolver.rb:127:in `resolve'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370@global/gems/bundler-1.2.0/lib/bundler/definition.rb:182:in `resolve'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370@global/gems/bundler-1.2.0/lib/bundler/definition.rb:113:in `specs'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370@global/gems/bundler-1.2.0/lib/bundler/definition.rb:162:in `specs_for'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370@global/gems/bundler-1.2.0/lib/bundler/definition.rb:151:in `requested_specs'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370@global/gems/bundler-1.2.0/lib/bundler/environment.rb:23:in `requested_specs'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370@global/gems/bundler-1.2.0/lib/bundler/runtime.rb:11:in `setup'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370@global/gems/bundler-1.2.0/lib/bundler.rb:116:in `setup'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:326:in `prepare_app_process'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:176:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+!!! The bundled mysql.rb driver has been removed from Rails 2.2. Please install the mysql gem and try again: gem install mysql.
+!!! The bundled mysql.rb driver has been removed from Rails 2.2. Please install the mysql gem and try again: gem install mysql.
+!!! The bundled mysql.rb driver has been removed from Rails 2.2. Please install the mysql gem and try again: gem install mysql.
+sigin action
+"************"
+"4"
+sigin action
+"************"
+"4"
+sigin action
+"************"
+"4"
+sigin action
+sigin action
+sigin action
+sigin action
+/home/rashmi/Documents/Ruby_programs/LoggerApp/app/views/admin/addservice.html.erb:6: warning: don't put space before argument parentheses
+"in create"
+/home/rashmi/Documents/Ruby_programs/LoggerApp/app/views/admin/addservice.html.erb:6: warning: don't put space before argument parentheses
+/home/rashmi/Documents/Ruby_programs/LoggerApp/app/views/admin/addservice.html.erb:6: warning: don't put space before argument parentheses
+[ pid=9886 thr=3065244480 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-16 19:18:28.727 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+sigin action
+[ pid=9546 thr=3063991104 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-17 16:12:06.74 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+sigin action
+sigin action
+sigin action
+sigin action
+[ pid=14057 thr=-610115368 file=utils.rb:176 time=2013-07-17 16:24:59.153 ]: *** Exception SyntaxError in application (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:47: syntax error, unexpected '}', expecting tASSOC) (process 14057, thread #<Thread:0xb744c1b0>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+2013/07/17 16:24:59 [error] 9587#0: *189 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /admin/addservice HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3001", referrer: "http://admin.dashboard.local:3001/login/success"
+[ pid=9548 thr=-610115368 file=utils.rb:176 time=2013-07-17 16:25:15.037 ]: *** Exception SyntaxError in PhusionPassenger::ClassicRails::ApplicationSpawner (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:47: syntax error, unexpected '}', expecting tASSOC) (process 9548, thread #<Thread:0xb744c1b0>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=9548 thr=-610115368 file=utils.rb:176 time=2013-07-17 16:25:59.607 ]: *** Exception SyntaxError in PhusionPassenger::ClassicRails::ApplicationSpawner (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:47: syntax error, unexpected '}', expecting tASSOC) (process 9548, thread #<Thread:0xb744c1b0>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+sigin action
+sigin action
+"************"
+"4"
+2013/07/17 17:14:58 [error] 9587#0: *282 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /services?userid=4 HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3001", referrer: "http://admin.dashboard.local:3001/login/_login"
+[ pid=14796 thr=-610115368 file=utils.rb:176 time=2013-07-17 17:14:58.946 ]: *** Exception SyntaxError in application (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:48: syntax error, unexpected ':', expecting kEND
+  map.resources :services :member => { :edituser => :get,...
+                           ^) (process 14796, thread #<Thread:0xb744c1b0>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=9548 thr=-610115368 file=utils.rb:176 time=2013-07-17 17:15:18.060 ]: *** Exception SyntaxError in PhusionPassenger::ClassicRails::ApplicationSpawner (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:48: syntax error, unexpected ':', expecting kEND
+  map.resources :services :member => { :edituser => :get,...
+                           ^) (process 9548, thread #<Thread:0xb744c1b0>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=9546 thr=3063589696 file=ext/nginx/HelperAgent.cpp:933 time=2013-07-17 17:15:18.193 ]: Uncaught exception in PassengerServer client thread:
+   exception: write() failed: Broken pipe (32)
+   backtrace:
+     in 'void Client::handleRequest(Passenger::FileDescriptor&)' (HelperAgent.cpp:828)
+     in 'void Client::threadMain()' (HelperAgent.cpp:952)
+
+[ pid=9548 thr=-610115368 file=utils.rb:176 time=2013-07-17 17:15:20.480 ]: *** Exception SyntaxError in PhusionPassenger::ClassicRails::ApplicationSpawner (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:48: syntax error, unexpected ':', expecting kEND
+  map.resources :services :member => { :edituser => :get,...
+                           ^) (process 9548, thread #<Thread:0xb744c1b0>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+sigin action
+[ pid=9546 thr=3063188288 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-17 17:15:44.704 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+sigin action
+"************"
+"4"
+"************"
+"4"
+sigin action
+"************"
+"4"
+sigin action
+sigin action
+sigin action
+sigin action
+sigin action

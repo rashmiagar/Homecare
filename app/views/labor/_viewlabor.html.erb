@@ -1,0 +1,21 @@
+
+
+<span class = "help-inline"><%= flash[:notice] %> </span>
+<table id="labortable" class="table table-bordered">
+<thead>
+<tr>
+	<th><b>Labourer Id</b></th>
+	<th><b>Labourer Name</b></th>
+	<th><b>Action</b></th>
+</tr>
+</thead>
+<tbody>
+<% @labors.each do |serv| %>
+	<tr>
+		<td><%= serv.id %></td>
+		<td><%= serv.labor_name %></td>
+		<td><%= link_to_remote "Remove", :url => labor_path(serv), :confirm => 'Are you sure?',:method => :delete, :class => 'btn btn-mini btn-danger' %> | <%= link_to "Deactivate" %></td>
+	</tr>
+<% end %>
+</tbody>
+</table>

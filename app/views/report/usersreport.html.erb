@@ -1,0 +1,32 @@
+
+<div id="bottompane">
+<span class = "help-inline"><%= flash[:notice] %> </span>
+<h2> User Report </h2>
+<table id="labortable" class="table table-bordered table-striped">
+<thead>
+<tr>
+	<th><b>User id</b></th>
+	<th><b>Username</b></th>
+	<th><b>Firstname</b></th>
+	<th><b>Lastname</b></th>
+	<th><b>Birthday</b></th>
+	<th><b>Email</b></th>
+	<th><b>Phone number </b></th>
+	<th><b></b></th>
+</tr>
+</thead>
+<tbody>
+<% @users.each do |req| %>
+	<tr>
+		<td><%= req.id %></td>
+		<td><%= req.username %></td>
+		<td><%= req.firstname %></td>
+		<td><%= req.lastname %></td>
+		<td><%= req.birthday %></td>
+		<td><%= req.email %></td>
+		<td><%= req.phone %></td>		
+	</tr>
+<% end %>
+</tbody>
+</table>
+</div>

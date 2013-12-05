@@ -1,0 +1,22 @@
+
+<div id="bottompane" class="container" style="width:auto">
+	<div class="row">
+		<div class="span9">
+		<span class = "help-inline alert-success"><%= flash[:notice] %> </span>
+		<%= error_messages_for :newservice %>
+		<h2> Add Service </h2>
+		<%# form_tag( {:controller => 'admin', :action => "add_service" }, {:id => 'add_service_form', :name => 'add_service_form'} ) do %>
+		<%#= @newservice.errors.full_messages %>
+		
+		<% form_for(:types_of_service, :url => '/services', :method => :post) do |f| %>  <!--goes to ServicesController.create()-->
+		<p>
+			<span style="float:left;margin-right:10px"><label>Service Name:</label></span> <%= f.text_field :service_name %>
+		</p>
+		<%= submit_tag 'Add Service' %>
+		<% end %>
+	</div>
+	<div class="span3">
+		<%= render :partial => 'viewservice', :locals => {:servicetypes => TypesOfService.all} %>
+	</div>
+</div>
+</div>

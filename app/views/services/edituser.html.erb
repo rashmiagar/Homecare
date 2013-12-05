@@ -1,0 +1,67 @@
+
+
+
+ <% @userdetails = Userdetails.find_by_username(session[:username]) %>
+
+
+<div id="bottompane">
+  <h2> Edit Profile </h2>
+  <span class="help-inline"><%= flash[:notice] %></span>
+  <div class="editform">
+    <% form_for(@userdetails, :url => update_user_path, :html => {:method => "put"}) do |f| %> 
+      <b><%= label :first_name, 'First Name' %></b>
+    <%= f.text_field :firstname %>
+   <p>
+    <b><%= label :last_name, 'Last Name' %></b>
+    <%= f.text_field :lastname%>
+  </p>
+  <p>
+    <b><%= label :birthdate, 'Birthday ' %></b>
+    
+    <%= f.text_field :birthday, :id => "dp1", :value => Date.today %>
+  </p>
+  <!-- <div class="input">
+    <%#= select_month Date.today, :use_short_month => true, :prompt => 'Choose Month', :class =>'inputCont' %>
+  </div>
+  <div class="input">
+    <%#= select_day Time.now, :prompt => "Choose Day", :class =>'inputCont' %>
+  </div>
+  <div class="input">
+    <%#= select_year Time.now, :prompt => "Choose Year", :class =>'inputCont'%>
+  </div> -->
+
+  
+  <p> 
+    <b> <%= label :email, 'Email address' %></b>
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <b><%= label :phone_number, 'Phone' %></b>
+    <%= f.text_field :phone %>
+  </p>
+
+  <%= submit_tag "Submit" %>
+<% end %>
+</div>
+</div>
+
+
+<script type="text/javascript">
+
+ // $('#dp1').datepicker({
+ //  onRender: function(date) {
+ //    return date.valueOf() >= Date.today.valueOf() ? 'disabled' : '';
+ //  }}).on("show", function() {
+ // $('#dp1').datepicker('show', {format: 'mm-dd-yyyy'});});
+
+$("#dp1").datepicker({
+  endDate: new Date()
+});
+
+$("#dp1").on("click", function() {
+ $('#dp1').datepicker('show'); //{format: 'mm-dd-yyyy'}
+});
+
+
+</script>
+<!--http://www.eyecon.ro/bootstrap-datepicker/-->

@@ -1,0 +1,32 @@
+<div id="bottompane">
+    <%= flash[:notice] %>
+  <h1> Create Request </h1>
+<div class="editform">
+  <p>
+  <% form_for(:service_transactions, :url =>"/request" , :method => "post") do |f| %>
+  
+    <span style="float:left;margin-right:10px">Service: </span><%= select_tag(:service_id, options_from_collection_for_select(@services, 'id', 'service_name', 1)) %><br/>
+
+
+    <span style="float:left;margin-right:10px">Date:</span>
+    <% my_select = date_select("service_transactions", "date", :prompt => true) %>
+    <%= my_select.gsub(/select/, "select class='input'") %><br/>
+
+    <span style="float:left;margin-right:10px">Time:</span>
+    
+    <% my_select = select_time(Time.now, :time_separator => ': ', :prompt => true) %>
+    <%= my_select.gsub(/select/, "select class='input'") %> <br/> <!-- this is to add css property to reduce the width -->
+     
+     <span style="float:left;margin-right:10px">Description: </span><%= text_area_tag 'Description'%><br/>
+      <span style="float:left;margin-right:10px">Address: </span><%= text_field_tag 'Address' %><br/>
+  <%#= submit_tag 'Submit', :onclick => "clickevent();return false;" %>
+  <%= submit_tag 'Submit', :confirm => "Your request is in progress and your service request no is XXXX", :class => "btn" %>
+  <% end %>
+</p>
+</div>
+<script type="text/javascript">
+function clickevent()
+{
+ alert('Your request is in progress and  your service request no is XXXXX');
+}
+</script>

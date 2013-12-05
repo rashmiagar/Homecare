@@ -1,0 +1,21 @@
+
+<div id="bottompane">
+	<span class = "help-inline alert-success"><%= flash[:notice] %> </span>
+	<%= error_messages_for :newservice %>
+	<h2> Add Labor </h2>
+	<%# form_tag( {:controller => 'admin', :action => "add_service" }, {:id => 'add_service_form', :name => 'add_service_form'} ) do %>
+	<%#= @newservice.errors.full_messages %>
+	
+	<% form_for(:labors, :url => '/labor', :method => :post) do |f| %>  <!--goes to LaborController.create()-->
+	<p>
+	
+		<span style="float:left;margin-right:10px"><label>Labor Service:</label></span><%= select_tag(:service_id,  options_from_collection_for_select(@services, 'id', 'service_name', 1)) %><br/>
+		<span style="float:left;margin-right:10px"><label>Labor Name:</label></span> <%= f.text_field :labor_name %><br/>
+		<span style="float:left;margin-right:10px"><label>Labor Address:</label></span> <%= f.text_field :address %><br/>
+		<span style="float:left;margin-right:10px"><label>Labor Phone:</label></span> <%= f.text_field :phone %><br/>
+		<span style="float:left;margin-right:10px"><label>Labor Charge:</label></span> <%= f.text_field :charges %>
+	</p>
+	<%= submit_tag 'Add Labor' %>
+	<% end %>
+
+

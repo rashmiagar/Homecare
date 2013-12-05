@@ -1,0 +1,29 @@
+
+<div id="bottompane">
+	<% flash.each do |name, msg| %>
+  <% if msg.is_a?(String) %>
+    <span class = "help-inline alert-<%= name == :notice ? "success" : "error" %>"><%= msg %> </span>
+    
+  <% end %>
+<% end %>
+	
+	<h2> View Service </h2>
+	<table class="table table-striped table-hover">
+		<thead>
+			<tr>
+				<th><b>Service Id</b></th>
+				<th><b>Service Name</b></th>
+				<th><b>Action</b></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% servicetypes.each do |serv| %>
+				<tr>
+					<td><%= serv.id %></td>
+					<td><%= serv.service_name %></td>
+					<td><%= link_to "Remove Service", service_path(serv), :confirm => 'Are you sure you want to delete this service?',:method => :delete, :class => 'btn btn-mini btn-danger' %></td>
+				</tr>
+			<% end %>
+		</tbody>
+
+	</table>

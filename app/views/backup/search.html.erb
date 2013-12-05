@@ -1,0 +1,31 @@
+<style>
+table {
+	border-collapse: seperate;
+	border-spacing: 45px;
+}
+ td {
+ 	
+ }
+</style>
+<div id="bottompane">
+	Search by service <%= select_tag(:service_id,  options_for_select([['select',0],['User', 1], ['Labourer',2], ['Request', 3]], :selected => 0)) %><br/>
+	<div>
+		<table style="border-collapse:seperate">
+		<tr>
+		<td>
+			<%= radio_button_tag(:search, "userid") %>
+			<span style="float:right"><%= label_tag(:search_userid, "userid") %></span>&nbsp;
+		</td>
+		<td>
+	 		<%= radio_button_tag(:search, "username") %>
+			<span style="float:right"><%= label_tag(:search_username, "username  ") %></span>
+		</td>
+		<td>
+			<%= radio_button_tag(:search, "city") %>
+			<span style="float:right"><%= label_tag(:search_city, "city") %></span>
+		</td>
+		<td>
+			<%= radio_button_tag(:search, "phone") %>
+			<span style="float:right"><%= label_tag(:search_phone, "phone number") %></span>
+		</td>
+	</div>

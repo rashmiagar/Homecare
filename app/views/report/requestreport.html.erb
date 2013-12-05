@@ -1,0 +1,39 @@
+
+<div id="bottompane">
+<span class = "help-inline"><%= flash[:notice] %> </span>
+<h2> Transactions Report </h2>
+<table id="labortable" class="table table-striped">
+<thead>
+<tr>
+	<th><b>Request No.</b></th>
+	<th><b>Service</b></th>
+	<th><b>Date</b></th>
+	<th><b>Time</b></th>
+	<th><b>Status</b></th>
+	<th><b></b></th>
+</tr>
+</thead>
+<tbody>
+<% @requests.each do |req| %>
+	<tr>
+		<td><%= req.transaction_id %></td>
+		<td><%= TypesOfService.getname(req.service_id) %></td>
+		<td><%= req.date%></td>
+		<td><%= req.time%></td>
+		<td><%= req.status %></td>
+		<% if req.status == 'open' %>
+			<td><%= link_to "Progress", progress_request_path(req.transaction_id) %> | <%= link_to "View", request_path(req.transaction_id) %></td>
+		<% elsif req.status == 'closed' %>
+			<td><%= link_to "Feedback", feedback_path(req.transaction_id) %> | <%= link_to "View", request_path(req.transaction_id), :class => 'btn btn-mini' %></td>
+		<% elsif req.status == 'processing' %>
+			<td><%= link_to "Complete", complete_request_path(req.transaction_id) %> | <%= link_to "View", request_path(req.transaction_id), :class => 'btn btn-mini' %></td>
+		<%  else %>
+
+			<td><%= link_to "View", request_path(req.transaction_id) %></td>
+		<% end %>
+	
+	</tr>
+<% end %>
+</tbody>
+</table>
+</div>

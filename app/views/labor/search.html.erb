@@ -1,0 +1,131 @@
+<style type="text/css">
+table.searchtable {
+	/*border-collapse: seperate;*/
+	/*border-spacing: 45px;*/
+}
+ table.searchtable td {
+ 	padding: 15px;
+ }
+</style>
+
+
+
+<div id="bottompane"> <!-- {:controller => 'labor', :action => 'dosearch'}-->
+
+<%# form_remote_tag(:url => {:action => 'dosearch'},
+    :html => {:id => 'search_form', :method => :get}, :method => :get) do %>
+	<% form_tag dosearch_labor_path, :id => 'search_form' do  %> 
+		Search <%= select_tag(:service_id,  options_for_select([['User', 1], ['Labourer',2], ['Request', 3]], :selected => 1), :id=>"searchselect" ) %><br/>
+
+		<div id="searchdiv">
+			<table class="searchtable" id="searchtableid"> <!-- cellpadding="10px" -->
+			<tr>
+				<td>
+				<%= radio_button_tag(:search, "name", :checked) %>
+				<span style="float:right"><%= label_tag(:search_name, "name") %></span>&nbsp;
+			</td>
+			<td>
+				<%= radio_button_tag(:search, "city") %>
+				<span style="float:right"><%= label_tag(:search_city, "city") %></span>&nbsp;
+			</td>
+			<td>
+				<%= radio_button_tag(:search, "phone") %>
+				<span style="float:right"><%= label_tag(:search_phone, "phone number") %></span>&nbsp;
+			</td>
+			<td>
+				<%= radio_button_tag(:search, "email") %>
+				<span style="float:right"><%= label_tag(:search_email, "email") %></span>&nbsp;
+			</td>
+			</tr>
+			
+			</table>
+			<div id="textboxfield">
+				<input id="searchinput" type="text" name="searchinput"></input><br/>
+				<input name="submit" type="button" onclick="clickevent();return false;" value="Search">
+				<%#= submit_tag "Search", :onclick => "$('#search_result').show();return false;" %>
+			</div>
+		<div id="search_result" style="display:none">
+			<%= render :partial =>  'labor/index' %>	
+		</div>
+	
+	</div>
+<% end %>
+</div>
+
+
+<script>
+$("div select#searchselect").on("change", function(){
+		$.ajax({
+			url: '<%= getsearchoptions_labor_path %>',
+			data: 'serviceid=' + $(this).val(),
+			dataType: 'json',
+			success: function(result) {
+				var str="";
+				if(result.length <1){
+					str="";
+					$('#searchtableid').first().html(str);
+					$('#textboxfield').html(str);
+				}
+
+				else {
+				for(i=0; i < result.length; i++)
+				{
+					str += "<td><input type=\"radio\" name=\"search\" value=\""+result[i]+"\"><span style=\"float:right\"><label for=\"search_"+result[i]+"\">"+result[i]+"</label></span>&nbsp;</td>"
+				}
+				$('#searchtableid').first().html(str);
+				$('#searchtableid input').first().attr('checked', true);
+				str = "<input id=\"searchinput\" type=\"text\" name=\"searchinput\"></input><br/><input name=\"search\" type=\"button\" onclick=\"clickevent();return false;\" value=\"Search\">";
+				$('#textboxfield').html(str);
+			}
+		} // s
+		});
+	});
+
+function clickevent()
+{
+		$.ajax({
+			//url: $(this).attr('action'), //sumbits it to the given url of the form
+			url: '<%= dosearch_labor_path  %>',
+			dataType: 'html',
+			data: "service_id="+ $('#search_form').find("select").val() + ";criteria=" + $('#search_form input[name=search]:checked').val(),
+			success: function (result) {
+				alert("in ajax call" + result);
+				$("#search_result").html(result);
+				$("#search_result").show();
+			}
+		});
+
+		//$("#search_result").html("<%= escape_javascript(render(:partial => "index" ))%>");
+}
+</script>
+
+
+
+
+
+<!--
+
+		<td>
+			<%#= radio_button_tag(:search, "userid") %>
+			<span style="float:right"><%#= label_tag(:search_userid, "userid") %></span>&nbsp;
+		</td>
+		<td>
+	 		<%#= radio_button_tag(:search, "username") %>
+			<span style="float:right"><%#= label_tag(:search_username, "username  ") %></span>&nbsp;
+		</td>
+		<td>
+			<%#= radio_button_tag(:search, "city") %>
+			<span style="float:right"><%#= label_tag(:search_city, "city") %></span>&nbsp;
+		</td>
+		<td>
+			<%#= radio_button_tag(:search, "phone") %>
+			<span style="float:right"><%#= label_tag(:search_phone, "phone number") %></span>&nbsp;
+		</td>
+
+
+<td>
+					<%#= radio_button_tag(:search, value) %>
+					<span style="float:right"><%#= label_tag("search_"+value, value) %></span>&nbsp;
+				</td>
+
+				-->

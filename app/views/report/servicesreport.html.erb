@@ -1,0 +1,21 @@
+
+<div id="bottompane">
+	<span class = "help-inline"><%= flash[:notice] %> </span>
+	<h2> Services Report </h2>
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th><b>Service Id</b></th>
+				<th><b>Service Name</b></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @servicetypes.each do |serv| %>
+				<tr>
+					<td><%= serv.id %></td>
+					<td><%= serv.service_name %></td>
+				</tr>
+			<% end %>
+		</tbody>
+
+	</table>

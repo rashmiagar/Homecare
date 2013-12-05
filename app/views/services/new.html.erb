@@ -1,0 +1,16 @@
+
+<%= javascript_include_tag :defaults %>
+<div class="container">
+<%= label_tag 'Type of service' %>
+<%= select_tag(:service_id, options_for_select([['Electrician',1], ['Plumber',2], ['Maid',3], ['Cook',4]])) %><br/>
+<%= label_tag 'Date' %>
+
+<%= label_tag 'Time' %>
+<%= label_tag 'Phone' %>
+ <%= label_tag 'Address' %>
+ <%= text_field "service_transactions", "address", :size => "20" %>
+ <%= label_tag 'Description' %>
+ <%= text_field "service_transactions", "description", :size => "20" %>
+<%= submit_tag 'Submit' %>
+<%= submit_tag 'Reset' %>
+</div>

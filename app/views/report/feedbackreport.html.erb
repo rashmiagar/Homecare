@@ -1,0 +1,29 @@
+
+<div id="bottompane">
+<span class = "help-inline"><%= flash[:notice] %> </span>
+<h2> Feedbacks Report </h2>
+<table id="labortable" class="table table-striped">
+<thead>
+<tr>
+	<th><b>Date</b></th>
+	<th><b>Labor</b></th>
+	<th><b>User</b></th>
+	<th><b>Transaction</b></th>
+	<th><b>Feedback</b></th>
+	<th><b>Rating</b></th>
+</tr>
+</thead>
+<tbody>
+<% @feedbacks.each do |f| %>
+	<tr>
+		<td><%= f.date %></td>
+		<td><%= link_to f.labor_id %></td>
+		<td><%= link_to f.user_id %></td>
+		<td><%= link_to f.transaction_id%></td>  <!--request_path(f.transaction_id)--> 
+		<td><%= f.feedback %></td>
+		<td><%= f.rating %></td>
+	</tr>
+<% end %>
+</tbody>
+</table>
+</div>

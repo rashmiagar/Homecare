@@ -1,0 +1,11 @@
+  <html>
+  <head>
+  <link rel="stylesheet" href="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css">
+  <head>
+  <body>
+  	<h1>My website</h1>
+  	<%= form_tag :class => "form-horizontal", :action => 'redirect_homepage' %>
+  <%= submit_tag 'New User', :name => 'userbutton', :id => 'new' %>
+  <%= submit_tag "Existing user", :name => 'userbutton', :id => 'existing' %>
+</body>
+  </html>

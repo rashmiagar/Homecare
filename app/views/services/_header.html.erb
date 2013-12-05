@@ -1,0 +1,18 @@
+<% %>
+<ul class="nav">
+        <a class="brand" href="/">Insignia</a>
+        <li class="dropdown">
+        <a class="dropdown_toggle" data-toggle="dropdown" href="#">Service Request<b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu" >
+          <li role="presentation"><%= link_to "Create request", new_request_path %></li>
+          <li role="presentation"><%= link_to "Track request", request_index_path %></li>
+          <!--<li role="presentation"><%#= link_to "Cancel request", '' %></li>-->
+        </ul>     
+      </li>
+         </ul>
+      <ul class="nav pull-right">
+        <li style="font-size:16px;font-weight:bold;">Welcome <%= session[:username]  %></li>
+        <li><%= link_to "Change Password", "/services/change_password" %></li>
+       <li class="active"><%= link_to "Edit Profile", '/services/edituser' %></li>
+       <li><%= link_to 'Logout', '/login/logout' %> </li>
+      </ul>

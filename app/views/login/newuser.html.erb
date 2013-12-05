@@ -1,0 +1,14 @@
+<div id="bottompane">
+	<span class="help-inline"><%= flash[:notice] %></span>
+	<span class="header"><h2> Customer Registration </h2></span>
+	<%= form_tag :action => 'create_user' %>
+		<p><b><%= label_tag :username, 'Username' %></b><%= text_field_tag :username %></p>
+ 		<p><b><%= label_tag :password, 'Password' %></b><%= password_field_tag  :password %><p>
+  		<p><b><%= label_tag 'Password Confirmation' %></b><%= password_field_tag :password_confirmation %></p>
+		<p><b><%= label_tag 'First Name' %></b><%= text_field_tag 'firstname' %> </p>
+   		<p><b><%= label_tag 'Last Name' %></b><%= text_field_tag  'lastname' %></p>
+		<p><b><%= label_tag 'Birthday (mm/dd/yyyy)' %></b><%= text_field_tag 'birthday' %></p>
+	  	<p><b> <%= label_tag 'Email address' %></b><%= text_field_tag 'email' %></p>
+	   	<p><b><%= label_tag 'Phone' %></b><%= text_field_tag  'phone' %></p>
+	  <%= submit_tag "Submit" %>
+</div>

@@ -1,0 +1,22 @@
+
+
+<div id="bottompane">
+    <%= flash[:notice] %>
+  <h1> Feedback Page </h1>
+
+  <p>
+  <% form_for(:feedback, :url =>"/feedback?id=#{@request_id}" , :method => "post") do |f| %>
+  
+      <span style="float:left;margin-right:10px">Description: </span><%= f.text_area :feedback, :id => "feedback_description" %><br/>
+      <span style="float:left;margin-right:10px">Rating: </span><%= f.text_field :rating, :id => "feedback_rating" %><br/>
+  <%#= submit_tag 'Submit', :onclick => "clickevent();return false;" %>
+  <%= submit_tag 'Submit', :confirm => "Your feedback is submitted successfully !!! Thanks !!!" %>
+  <% end %>
+</p>
+
+<script type="text/javascript">
+function clickevent()
+{
+ alert('Your feedback is submitted successfully !!! Thanks !!!');
+}
+</script>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>   
+<html lang="en">   
+<head>   
+<meta charset="utf-8">   
+<style>
+	#rightpane, a {
+		float:right;
+	}
+
+</style>
+<title>Twitter Bootstrap Version2.0 default form layout example</title>   
+<meta name="description" content="Twitter Bootstrap Version2.0 default form layout example from w3resource.com.">   
+<link href="twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">  
+</head>  
+<body>  
+	<h1 style="float:left">My home page</h1>
+	<div id="rightpane">
+		<marquee ONMOUSEOVER="this.stop();"
+            ONMOUSEOUT="this.start();">Welcome <%= session[:username] %>!</marquee>
+		<%= link_to 'logout', :controller => :login, :action => :logout %>
+	</div>
+
+</body>  
+</html>

@@ -1,0 +1,71 @@
+<html>
+<head>
+  <%= javascript_include_tag 'jquery-2.0.3', 'jquery-ujs', 'application' %>
+<%= stylesheet_link_tag "bootstrap.min.css" %>
+<%= stylesheet_link_tag "bootstrap.css" %>
+<%= stylesheet_link_tag "application.css" %>
+     <%= javascript_include_tag :defaults %>
+     <title>Rashmi's Website</title>
+
+    <style type="text/css">
+
+        #bottompane
+        {
+            margin-top: 2%;
+           
+        }
+        #bottompane form {
+          width: 500px;
+           margin-left: auto;
+            margin-right: auto;
+           
+            vertical-align: middle;
+        }
+        div #logincontent {
+          margin-top: 10%;
+        }
+
+      #bottompane h2 {
+        margin-bottom: 30px;
+
+      }
+      .header h2 {
+        background: #d3d3d3;
+      }
+
+        label{
+          font-size: 16px;
+        }
+
+        .input select {
+        /*align:left;*/
+          width: 90px;
+          
+        }
+        .input {
+          display: inline;
+        }
+      .myform input {
+        margin-left: 20px;
+      }
+      
+      .myform label {
+        float: left;
+        text-align: right;
+        width:120px;
+      }
+  </style>
+   
+    <%#= audio_tag "LagJaGale.mp3", :autoplay => 'true' %>
+  </head>
+  <body>
+  	<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+       
+   <%= render :partial => 'header' %>
+       	<%= yield %>
+    
+    </div>
+  </div>
+</div>

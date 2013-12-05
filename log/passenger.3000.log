@@ -1,0 +1,987 @@
+sigin action
+sigin action
+2013/07/19 15:50:31 [error] 4691#0: *270 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /labor/_viewlabor HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3000"
+[ pid=4765 thr=-610221858 file=utils.rb:176 time=2013-07-19 15:50:32.132 ]: *** Exception SyntaxError in application (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:49: syntax error, unexpected '}', expecting tASSOC) (process 4765, thread #<Thread:0xb74181bc>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=4649 thr=-610221858 file=utils.rb:176 time=2013-07-19 15:50:45.562 ]: *** Exception SyntaxError in PhusionPassenger::ClassicRails::ApplicationSpawner (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:49: syntax error, unexpected '}', expecting tASSOC) (process 4649, thread #<Thread:0xb74181bc>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=4647 thr=3062135616 file=ext/nginx/HelperAgent.cpp:933 time=2013-07-19 15:50:45.702 ]: Uncaught exception in PassengerServer client thread:
+   exception: write() failed: Broken pipe (32)
+   backtrace:
+     in 'void Client::handleRequest(Passenger::FileDescriptor&)' (HelperAgent.cpp:828)
+     in 'void Client::threadMain()' (HelperAgent.cpp:952)
+
+[ pid=4649 thr=-610221858 file=utils.rb:176 time=2013-07-19 15:50:49.283 ]: *** Exception SyntaxError in PhusionPassenger::ClassicRails::ApplicationSpawner (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:49: syntax error, unexpected '}', expecting tASSOC) (process 4649, thread #<Thread:0xb74181bc>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=4649 thr=-610221858 file=utils.rb:176 time=2013-07-19 15:50:52.884 ]: *** Exception SyntaxError in PhusionPassenger::ClassicRails::ApplicationSpawner (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:49: syntax error, unexpected '}', expecting tASSOC) (process 4649, thread #<Thread:0xb74181bc>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=4649 thr=-610221858 file=utils.rb:176 time=2013-07-19 15:51:34.980 ]: *** Exception SyntaxError in PhusionPassenger::ClassicRails::ApplicationSpawner (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:49: syntax error, unexpected '}', expecting tASSOC) (process 4649, thread #<Thread:0xb74181bc>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+"****************"
+sigin action
+"name"
+"request id"
+"name"
+"name"
+{"search"=>"name", "service_id"=>"1", "searchinput"=>"", "controller"=>"search", "submit"=>"Search", "action"=>"index"}
+"name"
+{"search"=>"Search", "service_id"=>"2", "searchinput"=>"", "controller"=>"search", "action"=>"index"}
+{"search"=>"name", "service_id"=>"1", "searchinput"=>"", "controller"=>"search", "submit"=>"Search", "action"=>"index"}
+{"search"=>"name", "service_id"=>"1", "searchinput"=>"", "controller"=>"search", "submit"=>"Search", "action"=>"index"}
+{"search"=>"name", "service_id"=>"1", "searchinput"=>"", "controller"=>"search", "submit"=>"Search", "action"=>"index"}
+/home/rashmi/Documents/Ruby_programs/LoggerApp/app/views/labor/search.html.erb:14: warning: don't put space before argument parentheses
+/home/rashmi/Documents/Ruby_programs/LoggerApp/app/views/labor/search.html.erb:14: warning: don't put space before argument parentheses
+2013/07/26 11:35:59 [error] 4645#0: *103 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "POST /labor/search HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3000", referrer: "http://admin.dashboard.local:3000/labor/search"
+[ pid=4676 thr=-610195238 file=utils.rb:176 time=2013-07-26 11:35:59.627 ]: *** Exception SyntaxError in application (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50: syntax error, unexpected ':', expecting kEND
+  map.resources :search :only => [:index]
+                         ^) (process 4676, thread #<Thread:0xb74251b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=4610 thr=-610195238 file=utils.rb:176 time=2013-07-26 11:36:06.616 ]: *** Exception SyntaxError in PhusionPassenger::ClassicRails::ApplicationSpawner (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50: syntax error, unexpected ':', expecting kEND
+  map.resources :search :only => [:index]
+                         ^) (process 4610, thread #<Thread:0xb74251b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=4610 thr=-610195238 file=utils.rb:176 time=2013-07-26 11:36:32.892 ]: *** Exception SyntaxError in PhusionPassenger::ClassicRails::ApplicationSpawner (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50: syntax error, unexpected ':', expecting kEND
+  map.resources :search :only => [:index]
+                         ^) (process 4610, thread #<Thread:0xb74251b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+{"search"=>"name", "service_id"=>"1", "searchinput"=>"", "authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "submit"=>"Search", "action"=>"index"}
+{"search"=>"name", "service_id"=>"1", "searchinput"=>"", "authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "submit"=>"Search", "action"=>"index"}
+{"search"=>"name", "service_id"=>"1", "searchinput"=>"", "authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "submit"=>"Search", "action"=>"index"}
+{"search"=>"name", "service_id"=>"1", "searchinput"=>"", "authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "submit"=>"Search", "action"=>"index"}
+{"search"=>"name", "service_id"=>"1", "searchinput"=>"", "authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "submit"=>"Search", "action"=>"index"}
+{"search"=>"name", "service_id"=>"1", "searchinput"=>"", "authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "submit"=>"Search", "action"=>"index"}
+{"search"=>"name", "service_id"=>"1", "searchinput"=>"", "authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "submit"=>"Search", "action"=>"index"}
+{"search"=>"name", "service_id"=>"1", "searchinput"=>"", "authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "submit"=>"Search", "action"=>"index", "method"=>"get"}
+2013/07/26 12:13:43 [error] 4645#0: *186 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "POST /labor/search HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3000", referrer: "http://admin.dashboard.local:3000/labor/search"
+[ pid=5712 thr=-610195238 file=utils.rb:176 time=2013-07-26 12:13:43.503 ]: *** Exception NoMethodError in application (undefined method `to_sym' for {:index=>:get}:Hash) (process 5712, thread #<Thread:0xb74251b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route.rb:205:in `to_proc'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:150:in `map'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:150:in `set_allowed_actions'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:64:in `initialize'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:526:in `new'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:526:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=4610 thr=-610195238 file=utils.rb:176 time=2013-07-26 12:13:48.715 ]: *** Exception NoMethodError in PhusionPassenger::ClassicRails::ApplicationSpawner (undefined method `to_sym' for {:index=>:get}:Hash) (process 4610, thread #<Thread:0xb74251b4>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route.rb:205:in `to_proc'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:150:in `map'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:150:in `set_allowed_actions'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:64:in `initialize'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:526:in `new'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:526:in `map_resource'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/resources.rb:447:in `resources'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+{"search"=>"name", "service_id"=>"1", "searchinput"=>"", "authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "submit"=>"Search", "action"=>"index", "method"=>"get"}
+{"search"=>"name", "service_id"=>"1", "searchinput"=>"", "authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "submit"=>"Search", "action"=>"index", "method"=>"get"}
+{"search"=>"name", "service_id"=>"1", "searchinput"=>"", "authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "submit"=>"Search", "action"=>"index", "method"=>"get"}
+{"controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"index"}
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"create"}
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"create"}
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"create"}
+{"controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"index"}
+2013/07/26 16:52:40 [error] 11203#0: *88 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /labor/search HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3000", referrer: "http://admin.dashboard.local:3000/labor/search"
+[ pid=11247 thr=-610080548 file=utils.rb:176 time=2013-07-26 16:52:40.126 ]: *** Exception SyntaxError in application (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50: odd number list for Hash) (process 11247, thread #<Thread:0xb745d1b8>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=11168 thr=-610080548 file=utils.rb:176 time=2013-07-26 16:52:44.064 ]: *** Exception SyntaxError in PhusionPassenger::ClassicRails::ApplicationSpawner (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50: odd number list for Hash) (process 11168, thread #<Thread:0xb745d1b8>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=11168 thr=-610080548 file=utils.rb:176 time=2013-07-26 16:53:07.829 ]: *** Exception SyntaxError in PhusionPassenger::ClassicRails::ApplicationSpawner (/home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:50: odd number list for Hash) (process 11168, thread #<Thread:0xb745d1b8>):
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+sigin action
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"dosearch"}
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"dosearch"}
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"dosearch"}
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"dosearch"}
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"dosearch"}
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"dosearch"}
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "search"=>"name", "method"=>"get", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"dosearch"}
+{"controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"dosearch"}
+{"controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"dosearch"}
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"dosearch"}
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"dosearch"}
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"labor", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"dosearch"}
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"labor", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"dosearch"}
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"labor", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"dosearch"}
+sigin action
+{"authenticity_token"=>"rCqRqiLtjOGup6IJoxBHoT6d0CRXKEOhseKRij52pUU=", "controller"=>"search", "search"=>"name", "submit"=>"Search", "searchinput"=>"", "service_id"=>"1", "action"=>"dosearch"}
+sigin action
+{"searchinput"=>"", "service_id"=>"1", "search"=>"name", "controller"=>"labor", "submit"=>"Search", "action"=>"dosearch"}
+{"searchinput"=>"", "service_id"=>"1", "search"=>"name", "controller"=>"labor", "submit"=>"Search", "action"=>"dosearch"}
+{"searchinput"=>"", "service_id"=>"1", "search"=>"name", "controller"=>"labor", "submit"=>"Search", "action"=>"dosearch"}
+2013/07/29 16:41:28 [error] 7179#0: *126 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /labor/search HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "admin.dashboard.local:3000", referrer: "http://admin.dashboard.local:3000/labor/show"
+[ pid=7205 thr=-610389798 file=utils.rb:176 time=2013-07-29 16:41:28.973 ]: *** Exception NameError in application (undefined local variable or method `get' for main:Object) (process 7205, thread #<Thread:0xb73c61b4>):
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:49
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `load!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:282:in `reload'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:58:in `reload_application'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/reloader.rb:33:in `run'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/dispatcher.rb:108:in `call'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:470:in `safe_fork'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+[ pid=7144 thr=-610389798 file=utils.rb:176 time=2013-07-29 16:41:34.851 ]: *** Exception NameError in PhusionPassenger::ClassicRails::ApplicationSpawner (undefined local variable or method `get' for main:Object) (process 7144, thread #<Thread:0xb73c61b4>):
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:49
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:227:in `draw'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/routes.rb:1
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load_without_new_constant_marking'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/activesupport-2.3.17/lib/active_support/dependencies.rb:171:in `load'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `each'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:287:in `load_routes!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-2.3.17/lib/action_controller/routing/route_set.rb:267:in `reload!'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:537:in `initialize_routing'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:188:in `process'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `send'
+	from /home/rashmi/.rvm/gems/ruby-1.8.7-p370/gems/rails-2.3.17/lib/initializer.rb:113:in `run'
+	from /home/rashmi/Documents/Ruby_programs/LoggerApp/config/environment.rb:9
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `require'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:222:in `preload_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:181:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/utils.rb:563:in `report_app_init_status'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:174:in `initialize_server'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/rashmi/.passenger/standalone/3.0.19-athlon-ruby1.8.7-linux-gcc4.7.3-1002/support/helper-scripts/passenger-spawn-server:99
+"request id"
+[ pid=7142 thr=3064634176 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-29 16:51:37.94 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=7142 thr=3064032064 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-29 16:54:19.323 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=7142 thr=3063429952 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-29 16:54:42.745 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+{"controller"=>"labor", "action"=>"dosearch"}
+[ pid=7142 thr=3062827840 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-29 16:56:20.775 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+{"controller"=>"labor", "action"=>"dosearch"}
+[ pid=7142 thr=3062225728 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-29 17:02:01.178 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+sigin action
+"**********"
+{"action"=>"dosearch", "controller"=>"labor"}
+[ pid=11884 thr=3065015104 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-30 11:30:31.125 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+"**********"
+{"action"=>"dosearch", "controller"=>"labor"}
+[ pid=11884 thr=3064613696 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-30 11:30:58.472 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+"**********"
+{"action"=>"dosearch", "controller"=>"labor"}
+[ pid=11884 thr=3064212288 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-30 11:31:44.979 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+"request id"
+"**********"
+{"action"=>"dosearch", "service_id"=>"1", "controller"=>"labor"}
+[ pid=11884 thr=3063208768 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-30 12:08:01.672 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+"**********"
+{"action"=>"dosearch", "service_id"=>"1", "controller"=>"labor"}
+[ pid=11884 thr=3062807360 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-30 12:08:19.404 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+"**********"
+{"action"=>"dosearch", "service_id"=>"1", "controller"=>"labor"}
+[ pid=11884 thr=3061803840 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-30 12:14:45.411 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+"**********"
+{"action"=>"dosearch", "submit"=>"Search", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"1", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "submit"=>"Search", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+[ pid=11884 thr=3061402432 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-30 12:15:00.9 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+"**********"
+{"action"=>"dosearch", "service_id"=>"1", "controller"=>"labor"}
+[ pid=11884 thr=3065617216 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-30 12:15:19.612 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+"**********"
+{"action"=>"dosearch", "submit"=>"Search", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"1", "controller"=>"labor"}
+[ pid=11884 thr=3065817920 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-30 12:16:33.557 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+"**********"
+{"action"=>"dosearch", "submit"=>"Search", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"1", "controller"=>"labor"}
+[ pid=11884 thr=3063610176 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-30 12:29:51.733 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+"**********"
+{"action"=>"dosearch", "submit"=>"Search", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"1", "controller"=>"labor"}
+[ pid=11884 thr=3063008064 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-30 12:33:02.639 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+"**********"
+{"action"=>"dosearch", "submit"=>"Search", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"1", "controller"=>"labor"}
+[ pid=11884 thr=3062405952 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-30 12:34:38.81 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+"**********"
+{"action"=>"dosearch", "submit"=>"Search", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"1", "controller"=>"labor"}
+[ pid=11884 thr=3061803840 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-30 12:35:00.593 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+"**********"
+{"action"=>"dosearch", "submit"=>"Search", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"1", "controller"=>"labor"}
+[ pid=11884 thr=3061402432 file=ext/nginx/HelperAgent.cpp:923 time=2013-07-30 12:38:11.896 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+"**********"
+{"action"=>"dosearch", "submit"=>"Search", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "submit"=>"Search", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "submit"=>"Search", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "submit"=>"Search", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+sigin action
+"**********"
+{"action"=>"dosearch", "search"=>"name", "authenticity_token"=>"0/gZOCtYuQT3xiSOr3xPDdMfYzqFxKUnIEoylp88Q8U=", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "authenticity_token"=>"H1Xen6dzGJi1QdNo1gGLFftTEQliI3tO5q1bEHqKg60=", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "search"=>"name", "commit"=>"Search", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"name"
+sigin action
+sigin action
+sigin action
+"name"
+"**********"
+{"action"=>"dosearch", "service_id"=>"undefined", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"undefined", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"undefined", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"undefined", "controller"=>"labor"}
+"name"
+"**********"
+{"action"=>"dosearch", "service_id"=>"undefined", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"undefined", "controller"=>"labor"}
+"name"
+"**********"
+{"action"=>"dosearch", "search"=>"Search", "authenticity_token"=>"5k8ZScLqEjtcrB2o6z66KaQkV08T4g2pKUuL3CzWNVE=", "service_id"=>"2", "searchinput"=>"", "controller"=>"labor"}
+"name"
+"**********"
+{"action"=>"dosearch", "search"=>"Search", "authenticity_token"=>"5k8ZScLqEjtcrB2o6z66KaQkV08T4g2pKUuL3CzWNVE=", "service_id"=>"2", "searchinput"=>"", "controller"=>"labor"}
+"name"
+"**********"
+{"action"=>"dosearch", "search"=>"Search", "authenticity_token"=>"5k8ZScLqEjtcrB2o6z66KaQkV08T4g2pKUuL3CzWNVE=", "service_id"=>"1", "searchinput"=>"", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"undefined", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"undefined", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"1", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"1", "controller"=>"labor"}
+"**********"
+{"action"=>"dosearch", "service_id"=>"1", "controller"=>"labor"}
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
+"name"
+"**********"
+"2"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["name", "phone", "status", "city"]
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
+"name"
+"**********"
+"2"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["name", "phone", "status", "city"]
+"**********"
+"2"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["name", "phone", "status", "city"]
+"request id"
+"**********"
+"3"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["request id", "by service", "by status", "by user"]
+"name"
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
+"name"
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
+"name"
+"**********"
+"2"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["name", "phone", "status", "city"]
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
+"name"
+"**********"
+"2"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["name", "phone", "status", "city"]
+"**********"
+"2"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["name", "phone", "status", "city"]
+"**********"
+"2"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["name", "phone", "status", "city"]
+"request id"
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
+"name"
+"**********"
+"2"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["name", "phone", "status", "city"]
+"**********"
+"1"
+{"3"=>["request id", "by service", "by status", "by user"], "2"=>["name", "phone", "status", "city"], "1"=>["userid", "username", "city", "phone", "email"]}
+["userid", "username", "city", "phone", "email"]
