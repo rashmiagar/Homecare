@@ -11,7 +11,7 @@
 
 ActiveRecord::Schema.define(:version => 20131127000955) do
 
-  create_table "feedback", :force => true do |t|
+  create_table "feedbacks", :force => true do |t|
     t.datetime "date"
     t.integer  "labor_id"
     t.integer  "user_id"

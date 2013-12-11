@@ -24,10 +24,10 @@ table.searchtable {
 				<%= radio_button_tag(:search, "name", :checked) %>
 				<span style="float:right"><%= label_tag(:search_name, "name") %></span>&nbsp;
 			</td>
-			<td>
-				<%= radio_button_tag(:search, "city") %>
+			<!-- <td>
+				<%#= radio_button_tag(:search, "city") %>
 				<span style="float:right"><%= label_tag(:search_city, "city") %></span>&nbsp;
-			</td>
+			</td> -->
 			<td>
 				<%= radio_button_tag(:search, "phone") %>
 				<span style="float:right"><%= label_tag(:search_phone, "phone number") %></span>&nbsp;
@@ -39,11 +39,15 @@ table.searchtable {
 			</tr>
 			
 			</table>
+			<div id="statusbox" style="display:none">
+				<%= select_tag(:status, options_for_select([['active', 1],['inactive', 2]]), :size => 2) %>
+			</div>
 			<div id="textboxfield">
 				<input id="searchinput" type="text" name="searchinput"></input><br/>
-				<input name="submit" type="button" onclick="clickevent();return false;" value="Search">
-				<%#= submit_tag "Search", :onclick => "$('#search_result').show();return false;" %>
+				
 			</div>
+			<input name="submit" type="button" onclick="clickevent();return false;" value="Search">
+				<%#= submit_tag "Search", :onclick => "$('#search_result').show();return false;" %>
 		<div id="search_result" style="display:none">
 			<%= render :partial =>  'labor/index' %>	
 		</div>
@@ -54,6 +58,23 @@ table.searchtable {
 
 
 <script>
+
+$(document).on('click', "input:radio[value='status']", function() { 
+
+	$('#statusbox').show();
+	$('#textboxfield').hide();
+
+});
+
+$(document).on('click', "input:radio[value!='status']", function() { 
+
+	$('#statusbox').hide();
+	$('#textboxfield').show();
+
+});
+
+
+
 $("div select#searchselect").on("change", function(){
 		$.ajax({
 			url: '<%= getsearchoptions_labor_path %>',
@@ -70,11 +91,12 @@ $("div select#searchselect").on("change", function(){
 				else {
 				for(i=0; i < result.length; i++)
 				{
-					str += "<td><input type=\"radio\" name=\"search\" value=\""+result[i]+"\"><span style=\"float:right\"><label for=\"search_"+result[i]+"\">"+result[i]+"</label></span>&nbsp;</td>"
+					str += "<td><input type=\"radio\" id=\"search_"+result[i]+"\" name=\"search\" value=\""+result[i]+"\"><span style=\"float:right\"><label for=\"search_"+result[i]+"\">"+result[i]+"</label></span>&nbsp;</td>"
+					
 				}
 				$('#searchtableid').first().html(str);
 				$('#searchtableid input').first().attr('checked', true);
-				str = "<input id=\"searchinput\" type=\"text\" name=\"searchinput\"></input><br/><input name=\"search\" type=\"button\" onclick=\"clickevent();return false;\" value=\"Search\">";
+				str = "<input id=\"searchinput\" type=\"text\" name=\"searchinput\"></input><br/>";
 				$('#textboxfield').html(str);
 			}
 		} // s

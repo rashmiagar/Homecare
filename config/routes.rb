@@ -54,7 +54,7 @@ ActionController::Routing::Routes.draw do |map|
   #map.resources :services, :member => { :edituser => :get, :change_password => :post }
   map.resources :labor, :collection => {:list => :get, :search => :get, :dosearch => :get, :getsearchoptions => :get}
   map.resources :feedback
-  map.resources :request, :collection => {:cancel => :get}, :member => {:progress => [:get, :post], :complete => [:get, :post]}
+  map.resources :request, :collection => {:cancel => :get, :getlaborlist => :get}, :member => {:progress => [:get, :post], :complete => [:get, :post]}
   map.resources :report, :collection => {:requestreport => [:get, :post], :laborreport => [:get, :post], :usersreport => [:get, :post], :servicesreport => [:get, :post], :feedbackreport => :get}
 
 

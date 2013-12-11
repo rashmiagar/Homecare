@@ -67,7 +67,7 @@ class LaborController < ApplicationController
 
 
 	def getsearchoptions
-		searchlist = {'1' => ['name', 'city', 'phone', 'email'], '2' => ['name', 'phone', 'status', 'city'], '3' => ['request id', 'service', 'status', 'username']} 
+		searchlist = {'1' => ['name', 'phone', 'email'], '2' => ['name', 'phone', 'status', 'city'], '3' => ['request id', 'service', 'status', 'username']} 
 		@searchoptions = searchlist[params[:serviceid]]
 		p @searchoptions[0]
 	  	respond_to do |format|

@@ -10,7 +10,7 @@
       <span style="float:left;margin-right:10px">Description: </span><%= f.text_area :feedback, :id => "feedback_description" %><br/>
       <span style="float:left;margin-right:10px">Rating: </span><%= f.text_field :rating, :id => "feedback_rating" %><br/>
   <%#= submit_tag 'Submit', :onclick => "clickevent();return false;" %>
-  <%= submit_tag 'Submit', :confirm => "Your feedback is submitted successfully !!! Thanks !!!" %>
+  <%= submit_tag 'Submit', :confirm => "Are you sure  you want to submit now ? " %>
   <% end %>
 </p>
 
