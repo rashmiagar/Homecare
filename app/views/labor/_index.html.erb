@@ -1,7 +1,28 @@
-<% crit ||= @crit %>
-<span>RAShmi</span>
-<ul>
-<% crit.each do |c| %>
-	<li><%= c %></li>
+<% results ||= @results %>
+<span style="margin-bottom:50px;"></span>
+<table class="table table-bordered table-striped">
+	<thead>
+	<tr>
+		<% if !results.empty? %>
+			<% colarr = results[0].class.column_names - ['id', 'password', 'created_at', 'updated_at'] %>
+			<% colarr.each do |col| %>
+			<th><b> <%= col %></b></th>
+			<% end %>
+		<% end %>
+	</tr>
+	</thead>
+
+<tbody>
+<% results.each do |row| %>
+	<tr>
+		<% colarr = row.class.column_names - ['id','password', 'created_at', 'updated_at'] %>
+		<% colarr.each do |col| %>
+		<td>
+		 <%#= col+":" %>
+		 <%= row[col] %> 
+		 </td>
 	<% end %>
-	</ul>
+	</tr>
+<% end %>
+</tbody>
+</table>

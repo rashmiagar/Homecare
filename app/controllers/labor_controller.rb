@@ -56,6 +56,7 @@ class LaborController < ApplicationController
 	end
 
 	def getcriteria
+		@results = ""
 		@searchoptions = getsearch_options
 		@crit = @searchoptions['1']
 	end
@@ -80,25 +81,17 @@ class LaborController < ApplicationController
 
 	def dosearch
 		p "**********"
-		p params['service_id']
+		p params
+		if (params[:service_id] == '1')
+			@results = Userdetails.query(params[:criteria], params[:query])
+		elsif(params[:service_id] == '2')
+			@results = Labor.query(params[:criteria], params[:query])
+		elsif(params[:service_id] == '3')
+			@results = ServiceTransactions.query(params[:criteria], params[:query])
+		end
+		p @results
 
-		@searchoptions = getsearch_options
-		@search_criteria = @searchoptions[params['service_id']]
-		p @searchoptions
-		p @search_criteria
-		
-
-
-
-
-
-
-		render :partial => 'index', :locals => {:crit => @search_criteria}
-
-
-
-
-
+		render :partial => 'index', :locals => {:results => @results}
 
 		# render :update do |page|
 		# 	page.show("search_result")
@@ -106,5 +99,27 @@ class LaborController < ApplicationController
 		# respond_to do |format|
 		# 	format.js { render :action => 'update_response'}
 		#  end
+	end
+
+	def getstatus 
+		searchlist = {'1' => ['active', 'inactive'], '2' => ['open','cancelled','processing','closed']} 
+		if( params[:name] == 'Labourer')
+			@searchoptions = searchlist['1']
+			p @searchoptions[0]
+			respond_to do |format|
+				format.js{
+					render :json => @searchoptions
+				}
+			end
+		elsif(params[:name] == 'Request')
+			@searchoptions = searchlist['2']
+			respond_to do |format|
+				format.js {
+
+					render :json =>  @searchoptions
+				}
+				
+			end
+		end
 	end
 end

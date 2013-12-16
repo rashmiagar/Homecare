@@ -39,15 +39,17 @@ table.searchtable {
 			</tr>
 			
 			</table>
+		
 			<div id="statusbox" style="display:none">
-				<%= select_tag(:status, options_for_select([['active', 1],['inactive', 2]]), :size => 2) %>
+				<%= select_tag(:searchstatus, options_for_select([['active', 1],['inactive', 2]]), :size => 2) %>
 			</div>
 			<div id="textboxfield">
 				<input id="searchinput" type="text" name="searchinput"></input><br/>
-				
 			</div>
-			<input name="submit" type="button" onclick="clickevent();return false;" value="Search">
+		
+			<input name="submit" type="submit" onclick="clickevent();return false;" value="Search">
 				<%#= submit_tag "Search", :onclick => "$('#search_result').show();return false;" %>
+		
 		<div id="search_result" style="display:none">
 			<%= render :partial =>  'labor/index' %>	
 		</div>
@@ -59,10 +61,39 @@ table.searchtable {
 
 <script>
 
-$(document).on('click', "input:radio[value='status']", function() { 
+$(document).on('click', "input:radio[value='Labourer_status']", function() { 
 
+	$.post("getstatus", {name: "Labourer"}, function(data){
+		//alert(data);
+	//var str = "<%= select(:status, options_for_select('data'), :size => 2).to_json %>";
+	var str = "<select id=\"searchstatus\" size=\"2\" name=\"status\">";
+	str +=  "<option value=\"1\">"+ data[0] + "</option><option value=\"2\">" + data[1] +"</option>";
+	str += "</select>";
+	$('#statusbox').html(str);
 	$('#statusbox').show();
 	$('#textboxfield').hide();
+	}, "json");
+
+});
+
+$(document).on('click', "input:radio[value='Request_status']", function() { 
+
+	$.post("getstatus", {name: "Request"}, function(data){
+		//alert(data);
+	
+	var str = "<select id=\"status\" size=\"2\" name=\"status\">";
+	for(i=0; i < data.length; i++){
+		str +=  "<option value=\""+i+"\">"+ data[i] + "</option>";
+	}
+	 
+	str += "</select>";
+	$('#statusbox').html(str);
+	$('#statusbox').show();
+	$('#textboxfield').hide();
+
+	}, "json");
+
+	
 
 });
 
@@ -81,6 +112,8 @@ $("div select#searchselect").on("change", function(){
 			data: 'serviceid=' + $(this).val(),
 			dataType: 'json',
 			success: function(result) {
+				//alert(result);
+				//alert(result[0]);
 				var str="";
 				if(result.length <1){
 					str="";
@@ -89,15 +122,18 @@ $("div select#searchselect").on("change", function(){
 				}
 
 				else {
+					var type = $('#searchselect option:selected').text();
 				for(i=0; i < result.length; i++)
 				{
-					str += "<td><input type=\"radio\" id=\"search_"+result[i]+"\" name=\"search\" value=\""+result[i]+"\"><span style=\"float:right\"><label for=\"search_"+result[i]+"\">"+result[i]+"</label></span>&nbsp;</td>"
+					str += "<td><input type=\"radio\" id=\"search_"+result[i]+"\" name=\"search\" value=\""+type+'_'+result[i]+"\"><span style=\"float:right\"><label for=\"search_"+result[i]+"\">"+result[i]+"</label></span>&nbsp;</td>"
 					
 				}
 				$('#searchtableid').first().html(str);
 				$('#searchtableid input').first().attr('checked', true);
+				$('#statusbox').hide();
 				str = "<input id=\"searchinput\" type=\"text\" name=\"searchinput\"></input><br/>";
 				$('#textboxfield').html(str);
+				$('#textboxfield').show();
 			}
 		} // s
 		});
@@ -105,17 +141,27 @@ $("div select#searchselect").on("change", function(){
 
 function clickevent()
 {
-		$.ajax({
-			//url: $(this).attr('action'), //sumbits it to the given url of the form
-			url: '<%= dosearch_labor_path  %>',
-			dataType: 'html',
-			data: "service_id="+ $('#search_form').find("select").val() + ";criteria=" + $('#search_form input[name=search]:checked').val(),
-			success: function (result) {
-				alert("in ajax call" + result);
-				$("#search_result").html(result);
-				$("#search_result").show();
-			}
-		});
+
+	if($('#searchinput').is(":visible")){
+
+		strdata = "service_id="+ $('#search_form').find("select").val() + ";criteria=" + $('#search_form input[name=search]:checked').val() + ";query=" + $('#searchinput').val();
+	}
+	else if($('#searchstatus').is(":visible")){
+		strdata = "service_id="+ $('#search_form').find("select").val() + ";criteria=" + $('#search_form input[name=search]:checked').val() + ";query=" + $('#searchstatus option:selected').text();
+	}
+
+	$.ajax({
+		//url: $(this).attr('action'), //sumbits it to the given url of the form
+		url: '<%= dosearch_labor_path  %>',
+		dataType: 'html',
+		data: strdata,
+		success: function (result) {
+			alert("in ajax call" + result);
+			$("#search_result").html(result);
+			$("#search_result").show();
+		}
+	});
+
 
 		//$("#search_result").html("<%= escape_javascript(render(:partial => "index" ))%>");
 }
