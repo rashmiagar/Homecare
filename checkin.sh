@@ -1,5 +1,4 @@
 #!/bin/sh
-pass=v2solutions
 username=rashmiagar
 #read -p "Password please: " -s pass
 git add .
