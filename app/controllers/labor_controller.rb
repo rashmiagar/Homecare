@@ -49,8 +49,8 @@ class LaborController < ApplicationController
 
 	def getservice
 		@services = TypesOfService.all
-		
 	end
+
 	def getlabor
 		@labors = Labor.all(:conditions => {:types_of_service_id => @services[0].id})
 	end
@@ -84,14 +84,21 @@ class LaborController < ApplicationController
 		p params
 		if (params[:service_id] == '1')
 			@results = Userdetails.query(params[:criteria], params[:query])
+			render :partial => 'index', :locals => {:results => @results}
 		elsif(params[:service_id] == '2')
 			@results = Labor.query(params[:criteria], params[:query])
+				p @results
+			render :partial => 'indexservices', :locals => {:type => params[:service_id], :results => @results}
 		elsif(params[:service_id] == '3')
+		
 			@results = ServiceTransactions.query(params[:criteria], params[:query])
-		end
-		p @results
+			render :partial => 'indexservices', :locals => {:type => params[:service_id], :results => @results}
+		end		
+		
+		
+	
 
-		render :partial => 'index', :locals => {:results => @results}
+		
 
 		# render :update do |page|
 		# 	page.show("search_result")
@@ -122,4 +129,14 @@ class LaborController < ApplicationController
 			end
 		end
 	end
+
+	def populateservice
+		@services = TypesOfService.all(:select => "id, service_name")
+		respond_to do |format|
+			format.js {
+				render :json => @services
+			}
+		end
+	end
+
 end

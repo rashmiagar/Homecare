@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
     <html>
     <head>
         <%= javascript_include_tag 'jquery-2.0.3', 'jquery-ujs', 'application' %>
@@ -20,6 +20,7 @@
     </style>
        <%= javascript_include_tag :defaults %>
         <%= javascript_include_tag 'bootstrap-datepicker' %>
+        <%= javascript_include_tag 'bootstrap-slider' %>
         <%#= javascript_include_tag 'bootstrap-dropdown' %>
         <%= javascript_include_tag 'bootstrap' %>
          
@@ -32,7 +33,7 @@
     </head>
     <body>
     
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
     <%= render :partial => 'admin/header'%>

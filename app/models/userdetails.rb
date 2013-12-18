@@ -1,6 +1,7 @@
 class Userdetails < ActiveRecord::Base
 	#attr_accessible :password, :username
-	has_many :service_transactions
+	has_many :transactions, :class_name => "ServiceTransactions"
+
 
 	validates_presence_of :username, :password, :email
 
@@ -8,10 +9,12 @@ class Userdetails < ActiveRecord::Base
 
 
 	def self.query(criteria, querystring)
-		if criteria == "name"
+		if criteria == "User_name" or criteria == "name"
 			Userdetails.all(:select => "id, username, firstname, lastname, birthday, email, phone", :conditions => ["username like ?", "#{querystring}%"])
-		else
-			Userdetails.all(:conditions => ["#{criteria} like ?", "%#{querystring}%"])
+		elsif criteria == "User_phone" or criteria=="phone"
+			Userdetails.all(:conditions => ["phone like ?", "%#{querystring}%"])
+		elsif criteria == "User_email" or criteria=="email"
+			Userdetails.all(:conditions => ["email like ?", "%#{querystring}%"])
 		end
 	end
 end

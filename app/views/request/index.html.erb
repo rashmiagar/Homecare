@@ -1,6 +1,9 @@
 
+<div class="alert alert-success">
 
-<span class = "help-inline"><%= flash[:notice] %> </span>
+ <button type="button" class="close" data-dismiss="alert">&times;</button>
+<span><%= flash[:notice] %> </span>
+</div>
 <table id="labortable" class="table table-hover">
 <thead>
 <tr>
@@ -21,7 +24,7 @@
 		<td><%= req.time%></td>
 		<td><%= req.status %></td>
 		<% if req.status == 'open' %>
-			<td><%= link_to_remote "Cancel", :url => request_path(req), :confirm => 'Are you sure?',:method => :delete %> | <%= link_to "View", request_path(req.transaction_id) %></td>
+			<td><%= link_to "Cancel", request_path(req), :confirm => 'Are you sure?',:method => :delete %> | <%= link_to "View", request_path(req.transaction_id) %></td>
 		<% elsif req.status == 'closed' %>
 			<td><%= link_to "Feedback", new_feedback_path+"?id=#{req.transaction_id}" %> | <%= link_to "View", request_path(req.transaction_id) %></td>
 		<%  else %>

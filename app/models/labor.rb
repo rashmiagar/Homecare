@@ -1,6 +1,6 @@
 class Labor < ActiveRecord::Base
-	belongs_to :types_of_service
-	belongs_to :service_transaction
+	belongs_to :service, :class_name => "TypesOfService", :foreign_key => "types_of_service_id"
+	has_many :transactions, :class_name => "ServiceTransactions"
 	
 	def self.query criteria, querystring
 		if criteria == "Labourer_name"

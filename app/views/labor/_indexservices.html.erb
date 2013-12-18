@@ -1,0 +1,43 @@
+<% results ||= @results %>
+<span style="margin-bottom:50px;"></span>
+<table class="table table-bordered table-striped">
+	<thead>
+	<tr>
+
+		<% if !results.empty? %>
+			<% colarr = results[0].class.column_names - ['id', 'types_of_service_id', 'service_id', 'user_id', 'password', 'created_at', 'updated_at'] %>
+			<%	if type == '3' %>
+				
+				<% colarr+= ["service_name", "username"] %>
+			<%	elsif type == '2' %>	
+				<% colarr += ["service_name"] %>
+			<%end%>
+			
+
+			<% colarr.each do |col| %>
+			<th><b> <%= col %></b></th>
+			<% end %>
+		<% end %>
+	</tr>
+	</thead>
+
+<tbody>
+<% results.each do |row| %>
+	<tr>
+		
+		<% colarr.each do |col| %>
+		<td>
+		 <%#= col+":" %>
+		 <% if col == "username" %>
+		 	<%= row.user.username %>
+		 <% elsif col=="service_name" %>
+		 	<%= row.service.service_name %>
+		 <% else %>
+		 <%= row[col] %> 
+		 <% end %>
+		 </td>
+	<% end %>
+	</tr>
+<% end %>
+</tbody>
+</table>

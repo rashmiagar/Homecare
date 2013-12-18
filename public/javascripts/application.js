@@ -4,7 +4,7 @@
 //= require jquery
 //= require bootstrap
 document.write('<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>');
-
+//<script>window.jQuery || document.write('<script src="js/jquery-2.0.3.min.js"><\/script>')</script>
 
 function validateChangePassword()
 {

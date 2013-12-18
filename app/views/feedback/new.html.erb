@@ -1,4 +1,12 @@
 
+<style type="text/css">
+  .slider-selection {
+    background: none repeat scroll 0 0 #FF8282;
+  }
+  .slider-handle {
+    background: none repeat scroll 0 0 #FF0000;
+  }
+</style>
 
 <div id="bottompane">
     <%= flash[:notice] %>
@@ -7,14 +15,21 @@
   <p>
   <% form_for(:feedback, :url =>"/feedback?id=#{@request_id}" , :method => "post") do |f| %>
   
-      <span style="float:left;margin-right:10px">Description: </span><%= f.text_area :feedback, :id => "feedback_description" %><br/>
-      <span style="float:left;margin-right:10px">Rating: </span><%= f.text_field :rating, :id => "feedback_rating" %><br/>
+      <span style="float:left;margin-right:10px">Description: </span><%= f.text_area :feedback, :id => "feedback_description", :size => "30x5" %><br/>
+      <span style="float:left;margin-right:10px">Rating: </span><%#= f.text_field :rating, :id => "feedback_rating", :class => "slider", handle => 'triangle' %>
+	<input type="text" class="slider" class="span2" value="" data-slider-min="0" data-slider-max="5" data-slider-step=".5" data-slider-value="[0]" data-slider-orientation="horizontal" data-slider-tooltip="show" data-slider-handle="square">
+
+      <br/>
   <%#= submit_tag 'Submit', :onclick => "clickevent();return false;" %>
-  <%= submit_tag 'Submit', :confirm => "Are you sure  you want to submit now ? " %>
+  <%= submit_tag 'Submit', :confirm => "Are you sure  you want to submit now ? ", :class => "btn" %>
   <% end %>
 </p>
 
 <script type="text/javascript">
+$('.slider').slider().on('slide', function(ev){
+
+});
+
 function clickevent()
 {
  alert('Your feedback is submitted successfully !!! Thanks !!!');

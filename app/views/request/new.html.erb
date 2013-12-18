@@ -22,7 +22,7 @@
     <% my_select = select_time(Time.now, :prefix => "time", :ignore_date => true, :time_separator => ': ', :prompt => true) %>
     <%= my_select.gsub(/select/, "select class='input'") %> <br/> <!-- this is to add css property to reduce the width -->
      
-     <span style="float:left;margin-right:10px">Description: </span><%= f.text_area 'description'%><br/>
+     <span style="float:left;margin-right:10px">Description: </span><%= f.text_area 'description', :size=>"30x5"%><br/>
       <span style="float:left;margin-right:10px">Address: </span><%= f.text_field 'address' %><br/>
   <%#= submit_tag 'Submit', :onclick => "clickevent();return false;" %>
   <%= submit_tag 'Submit', :confirm => "Your request is in progress and your service request no is XXXX", :class => "btn" %>

@@ -44,17 +44,19 @@ table.searchtable {
 				<%= select_tag(:searchstatus, options_for_select([['active', 1],['inactive', 2]]), :size => 2) %>
 			</div>
 			<div id="textboxfield">
-				<input id="searchinput" type="text" name="searchinput"></input><br/>
+				<input id="searchinput" type="text" name="searchinput" data-provide="typehead"></input><br/>
 			</div>
 		
-			<input name="submit" type="submit" onclick="clickevent();return false;" value="Search">
+			<input name="submit" class="btn" type="submit" onclick="clickevent();return false;" value="Search">
 				<%#= submit_tag "Search", :onclick => "$('#search_result').show();return false;" %>
-		
-		<div id="search_result" style="display:none">
+			
+	</div>
+
+		<div id="search_result" style="display:none;margin-top:50px;position:relative;left:-100px;">
+
 			<%= render :partial =>  'labor/index' %>	
 		</div>
-	
-	</div>
+
 <% end %>
 </div>
 
@@ -81,7 +83,7 @@ $(document).on('click', "input:radio[value='Request_status']", function() {
 	$.post("getstatus", {name: "Request"}, function(data){
 		//alert(data);
 	
-	var str = "<select id=\"status\" size=\"2\" name=\"status\">";
+	var str = "<select id=\"searchstatus\" size=\"2\" name=\"status\">";
 	for(i=0; i < data.length; i++){
 		str +=  "<option value=\""+i+"\">"+ data[i] + "</option>";
 	}
@@ -97,8 +99,33 @@ $(document).on('click', "input:radio[value='Request_status']", function() {
 
 });
 
-$(document).on('click', "input:radio[value!='status']", function() { 
 
+$(document).on('click', "input:radio[value='Request_service']", function() { 
+
+//ajax request 
+	$.post("populateservice", {name: "Request"}, function(data){
+		//alert(data[0]['types_of_service'].service_name);
+	
+	var services = <%= @services.to_json %>;
+	
+	var str = "<select id=\"searchstatus\" size=\"2\" name=\"status\">";
+	for(i=0; i < data.length; i++){
+		str +=  "<option value=\""+data[i]['types_of_service'].id+"\">"+ data[i]['types_of_service'].service_name + "</option>";
+	}
+	 
+	str += "</select>";
+	$('#statusbox').html(str);
+	$('#statusbox').show();
+	$('#textboxfield').hide();
+
+	}, "json");  
+
+	
+
+});
+
+$(document).on('click', "input:radio[value!='status']", function() { 
+//alert("here");
 	$('#statusbox').hide();
 	$('#textboxfield').show();
 
@@ -134,6 +161,8 @@ $("div select#searchselect").on("change", function(){
 				str = "<input id=\"searchinput\" type=\"text\" name=\"searchinput\"></input><br/>";
 				$('#textboxfield').html(str);
 				$('#textboxfield').show();
+				$("#search_result").html(null);
+			    
 			}
 		} // s
 		});
@@ -146,8 +175,11 @@ function clickevent()
 
 		strdata = "service_id="+ $('#search_form').find("select").val() + ";criteria=" + $('#search_form input[name=search]:checked').val() + ";query=" + $('#searchinput').val();
 	}
-	else if($('#searchstatus').is(":visible")){
-		strdata = "service_id="+ $('#search_form').find("select").val() + ";criteria=" + $('#search_form input[name=search]:checked').val() + ";query=" + $('#searchstatus option:selected').text();
+	else if($('#statusbox').is(":visible")){
+		// if(  $('#search_form').find("select").val() == '3')	
+		// 	strdata = "service_id="+ $('#search_form').find("select").val() + ";criteria=" + $('#search_form input[name=search]:checked').val() + ";query=" + $('#searchstatus option:selected').val();	
+		// else if ( $('#search_form').find("select").val() == '2')	
+			strdata = "service_id="+ $('#search_form').find("select").val() + ";criteria=" + $('#search_form input[name=search]:checked').val() + ";query=" + $('#searchstatus option:selected').text();
 	}
 
 	$.ajax({
