@@ -11,6 +11,10 @@ class ServiceTransactions < ActiveRecord::Base
 		@transaction_id = d.to_i
 	end
 
+	def feedback_already_given?(id)
+		Feedback.exists?(:transaction_id => id)
+	end
+
 	def self.query criteria, querystring
 		if criteria == "Request_request id"
 			ServiceTransactions.all(:conditions => ["transaction_id like ?", "#{querystring}%"])
@@ -25,6 +29,19 @@ class ServiceTransactions < ActiveRecord::Base
 		elsif criteria == 'Request_username'
 			ServiceTransactions.all(:conditions => ["userdetails.username like ?", "%#{querystring}%"], :joins => "INNER JOIN userdetails on service_transactions.user_id = userdetails.id")
 		end
-
 	end
+
+	def style_status_html status
+		htmlstr = "<td><span class=\"status-style\">#{status}</span></td>"
+		if status == 'open'
+			htmlstr.gsub("status-style", "badge badge-info")
+		elsif status == 'cancelled'
+			htmlstr.gsub("status-style", "badge badge-warning")
+		elsif status == 'processing'
+			htmlstr.gsub("status-style", "badge badge-success")
+		elsif status == 'closed'
+			htmlstr.gsub("status-style", "badge badge-important")
+		end
+	end
+
 end

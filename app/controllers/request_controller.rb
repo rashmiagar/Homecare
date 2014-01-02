@@ -1,6 +1,6 @@
 class RequestController < ApplicationController
  layout "services" 
-	before_filter :change_layout
+	before_filter :change_layout, :getservices
 
 
 	def index
@@ -92,5 +92,8 @@ private
 			self.class.layout "admin" if is_admin?
 	end
 
+	def getservices
+		@services = TypesOfService.all(:select => "id, service_name")
+	end
 	
 end

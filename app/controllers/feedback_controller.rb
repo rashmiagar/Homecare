@@ -1,5 +1,6 @@
 class FeedbackController < ApplicationController
 	layout "services"
+	:before_filter 
 
 	def index
 		@all_feedbacks = Feedback.all
@@ -18,7 +19,7 @@ class FeedbackController < ApplicationController
 		@feedback.user_id = Userdetails.find_by_username(session[:username])
 		@feedback.transaction_id=params[:id]
 		#@feedback.feedback = "xyz"
-		#@feedback.rating = 5
+		#@feedback.rating = params[:rating]
 		
 
     if @feedback.valid?
@@ -32,6 +33,12 @@ class FeedbackController < ApplicationController
 	end
 
 	def show
-		
+
+		@feedback = Feedback.find_by_transaction_id(params[:id])
+
+	end
+
+	def feedback_by_labor
+		@feedbacks = Feedback.find_all_by_labor_id( params[:id])		
 	end
 end

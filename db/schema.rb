@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(:version => 20131127000955) do
     t.integer  "user_id"
     t.integer  "transaction_id"
     t.string   "feedback"
-    t.integer  "rating"
+    t.decimal  "rating",         :precision => 2, :scale => 1
   end
 
   create_table "labors", :force => true do |t|

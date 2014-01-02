@@ -7,9 +7,17 @@
           <li role="presentation"><%= link_to "Create request", new_request_path %></li>
           <li role="presentation"><%= link_to "Track request", request_index_path %></li>
           <!--<li role="presentation"><%#= link_to "Cancel request", '' %></li>-->
-        </ul>     
+        </ul>  
       </li>
-         </ul>
+      <li class="dropdown">
+        <a class="dropdown_toggle" data-toggle="dropdown" href="">Labor<b class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" >
+              <% @services.each do |s| %>
+              <li role="presentation"><%= link_to s.service_name.capitalize, service_path(s.id) %></li>
+              <% end %>
+            </ul>
+      </li>
+  </ul>
       <ul class="nav pull-right">
         <li style="font-size:16px;font-weight:bold;">Welcome <%= session[:username]  %></li>
         <li><%= link_to "Change Password", "/services/change_password" %></li>

@@ -53,6 +53,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :admin, :collection => {:addservice => [:get], :viewservice => :get, :change_password => :get}
   #map.resources :services, :member => { :edituser => :get, :change_password => :post }
   map.resources :labor, :collection => {:list => :get, :search => :get, :dosearch => :get, :getsearchoptions => :get, :getstatus => :get}
+  map.feedback_by_labor '/feedback_by_labor/:id', :controller => :feedback, :action => :feedback_by_labor
   map.resources :feedback
   map.resources :request, :collection => {:cancel => :get, :getlaborlist => :get}, :member => {:progress => [:get, :post], :complete => [:get, :post]}
   map.resources :report, :collection => {:requestreport => [:get, :post], :laborreport => [:get, :post], :usersreport => [:get, :post], :servicesreport => [:get, :post], :feedbackreport => :get}

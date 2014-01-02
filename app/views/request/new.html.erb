@@ -1,3 +1,16 @@
+<style type="text/css">
+select:focus, input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
+outline: thin dotted #333;
+outline: 5px auto -webkit-focus-ring-color;
+outline-offset: -2px;
+}
+select {
+width: 220px;
+border: 1px solid #cccccc;
+background-color: #ffffff;
+}
+</style>
+
 <div id="bottompane">
     <%= flash[:notice] %>
   <h1> Create Request </h1>
@@ -5,11 +18,11 @@
   <p>
   <% form_for(:service_transactions, :url =>"/request" , :method => "post") do |f| %>
   
-    <span style="float:left;margin-right:10px">Service: </span><%= select_tag(:service_id, options_from_collection_for_select(@services, 'id', 'service_name', 1), :id => "serviceselect") %><br/>
+    <span style="float:left;margin-right:10px">Service: </span><%= select_tag(:service_id, options_from_collection_for_select(@services, 'id', 'service_name', 1), { :id => "serviceselect" }) %><br/>
 
 
     <div id="labordiv" >
-      <span style="float:left;margin-right:10px">Labor: </span><%= f.select(:labor_id, options_for_select([['Select a labor', '']]), {:disabled => true}) %><br/>
+      <span style="float:left;margin-right:10px">Labor: </span><%= f.select(:labor_id, options_for_select([['Select a labor', '']]), {}, {:disabled => true}) %><br/>
     </div>
 
 
@@ -22,10 +35,10 @@
     <% my_select = select_time(Time.now, :prefix => "time", :ignore_date => true, :time_separator => ': ', :prompt => true) %>
     <%= my_select.gsub(/select/, "select class='input'") %> <br/> <!-- this is to add css property to reduce the width -->
      
-     <span style="float:left;margin-right:10px">Description: </span><%= f.text_area 'description', :size=>"30x5"%><br/>
+     <span style="float:left;margin-right:10px">Description: </span><%= f.text_area 'description', :size=>"30x5" %><br/>
       <span style="float:left;margin-right:10px">Address: </span><%= f.text_field 'address' %><br/>
   <%#= submit_tag 'Submit', :onclick => "clickevent();return false;" %>
-  <%= submit_tag 'Submit', :confirm => "Your request is in progress and your service request no is XXXX", :class => "btn" %>
+  <%= submit_tag 'Submit', :confirm => "Your request is in progress and your service request no is XXXX", :class=> "btn" %>
   <% end %>
 </p>
 </div>
@@ -41,8 +54,10 @@ $("div select#serviceselect").on("change", function(){
       success: function(result) {
         var str="";
         if(result.length <1){
-          str="";
-          $('#labordiv').first().html(str);
+           str = "";
+          select = $('#service_transactions_labor_id');
+         // select.disabled="disabled";
+          select.html($('<option></option>').html("Select a labor"));
         
         }
 
@@ -52,7 +67,7 @@ $("div select#serviceselect").on("change", function(){
             arr.push(v["labor"]["labor_name"]);
           });
           //alert(arr);
-          str = "<span style=\"float:left;margin-right:10px\">Service: </span>";
+          str = "<span style=\"float:left;margin-right:10px\">Labor: </span>";
 
           // str += '<%= select_tag(:labor_id, options_for_select('arr')) %>';
           //   str.replace('arr', arr);
@@ -69,6 +84,7 @@ $("div select#serviceselect").on("change", function(){
       function populateDropdown(select, data) {
         //select.html('');
         select.removeAttr("disabled");
+        select.html("");
         $.each(data, function(id, option) {
             select.append($('<option></option>').val(option["labor"].id).html(option["labor"].labor_name));
         });      

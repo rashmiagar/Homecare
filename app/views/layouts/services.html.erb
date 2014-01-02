@@ -5,6 +5,7 @@
          <!-- Bootstrap -->
       <%#= stylesheet_link_tag "bootstrap.min.css" %>
     <%= stylesheet_link_tag "bootstrap.css" %>
+        <%= stylesheet_link_tag "bootstrap-select.min.css" %>
     <%= stylesheet_link_tag "slider.css" %>
     <%= stylesheet_link_tag "application.css" %>
     <link type="text/css" rel="stylesheet" href="/stylesheets/datepicker.css">
@@ -37,31 +38,34 @@
         
      }
 
-    .editform input, textarea, select {
+    .editform 
+    input, .editform textarea, .editform select {
       margin-left: 20px;
     }
-    .editform label, span {
+    
+    .editform label, .editform span {
       float: left;
       text-align: right;
       width:120px;
     }
     
     .navbar
-  .navbar-inner {
-    background-color: #FF8282;
+    .navbar-inner {
+      background-color: #0000ff;
+    }
 
-  }
+    .navbar .nav > li > a {
+      color: #ffffff;
+      text-shadow: 0 1px 0 #0000f0;
+    }
 
-  .navbar .nav > li > a {
-    color: #0000ff;
-    text-shadow: 0 1px 0 #0000f0;
-  }
+    .navbar .brand {
+      color: #22ee55;
+      text-shadow: 0 1px 0 #22ee55
+    }
 
-.navbar .brand {
-    color: #ff2299;
-}
-
-    </style>
+    table { empty-cells: show; }
+  </style>
         <%= javascript_include_tag :defaults %>
         <%= javascript_include_tag 'bootstrap-datepicker' %>
         <%= javascript_include_tag 'bootstrap-slider' %>

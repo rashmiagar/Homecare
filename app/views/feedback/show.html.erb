@@ -1,2 +1,20 @@
-<h1>Feedback#show</h1>
-<p>Find me in app/views/feedback/show.html.erb</p>
+
+<h3>Feedback for Transaction <%= @feedback.transaction_id %></h3>
+
+	<p><%= @feedback.feedback %></p>
+	<p>Given by <%= @feedback.user.username%></p>
+	<p>On 
+			<td><%= @feedback.date %></td>
+
+		</p>
+
+
+
+
+		<p>Labor: <%= @feedback.labor_id %></p>
+		<p>Rating: <%= @feedback.rating %></p>
+	
+		
+	</tr>
+</tbody>
+</table>

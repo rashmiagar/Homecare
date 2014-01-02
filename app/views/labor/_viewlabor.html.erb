@@ -1,11 +1,16 @@
-
-
+<style type="text/css">
+	table { empty-cells: show; }
+</style>
 <span class = "help-inline"><%= flash[:notice] %> </span>
 <table id="labortable" class="table table-bordered">
 <thead>
 <tr>
 	<th><b>Labourer Id</b></th>
 	<th><b>Labourer Name</b></th>
+	<th><b>Labourer Address</b></th>
+	<th><b>Labourer Phone</b></th>
+	<th><b>Labourer Charges</b></th>
+	<th><b>Labour Feedbacks</b></th>
 	<th><b>Action</b></th>
 </tr>
 </thead>
@@ -14,6 +19,10 @@
 	<tr>
 		<td><%= serv.id %></td>
 		<td><%= serv.labor_name %></td>
+		<td><%= serv.address %></td>
+		<td><%= serv.phone %></td>
+		<td><%= serv.charges %></td>
+		<td><%= link_to "Feedbacks", feedback_by_labor_path(serv.id) %></td>
 		<td><%= link_to_remote "Remove", :url => labor_path(serv), :confirm => 'Are you sure?',:method => :delete, :class => 'btn btn-mini btn-danger' %> | <%= link_to "Deactivate" %></td>
 	</tr>
 <% end %>

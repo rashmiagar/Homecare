@@ -1,6 +1,7 @@
 class ServicesController < ApplicationController
  layout "services"
- 
+ before_filter :getservices, :only => [:show]
+
   def index
     p "************"
     p params['userid']
@@ -23,6 +24,10 @@ class ServicesController < ApplicationController
     end
   end
 
+  def show
+    
+  end
+
   def edit
   end
 
@@ -34,5 +39,11 @@ class ServicesController < ApplicationController
   end
 
   def update
+  end
+
+private 
+
+  def getservices
+    @services = TypesOfService.all(:select => "id, service_name")
   end
 end

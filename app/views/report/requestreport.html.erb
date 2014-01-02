@@ -1,5 +1,5 @@
 
-<div id="bottompane">
+<div id="bottompane" style="width:100%">
 <span class = "help-inline"><%= flash[:notice] %> </span>
 <h2> Transactions Report </h2>
 <table id="labortable" class="table table-striped">
@@ -24,7 +24,11 @@
 		<% if req.status == 'open' %>
 			<td><%= link_to "Progress", progress_request_path(req.transaction_id) %> | <%= link_to "View", request_path(req.transaction_id) %></td>
 		<% elsif req.status == 'closed' %>
-			<td><%= link_to "Feedback", feedback_path(req.transaction_id) %> | <%= link_to "View", request_path(req.transaction_id), :class => 'btn btn-mini' %></td>
+			<td>
+			<% if req.feedback_already_given?(req.transaction_id) %>
+				<%= link_to "Show Feedback", feedback_path(req.transaction_id) %> | 
+			<% end %>
+			 <%= link_to "View", request_path(req.transaction_id), :class => 'btn btn-info btn-mini' %></td>
 		<% elsif req.status == 'processing' %>
 			<td><%= link_to "Complete", complete_request_path(req.transaction_id) %> | <%= link_to "View", request_path(req.transaction_id), :class => 'btn btn-mini' %></td>
 		<%  else %>

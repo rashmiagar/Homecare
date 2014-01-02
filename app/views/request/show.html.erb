@@ -1,12 +1,18 @@
 <div id="bottompane">
 
-  
-    <span style="float:left;margin-right:10px">Service: <%= TypesOfService.getname(@transaction.service_id) %></span><br/>
-
-    <span style="float:left;margin-right:10px">Date: <%= @transaction.date %></span><br/>
-   
-    <span style="float:left;margin-right:10px">Time:<%= @transaction.time %></span><br/>
-       
-     <span style="float:left;margin-right:10px">Description: <%= @transaction.description %></span><br/>
-      <span style="float:left;margin-right:10px">Address: <%= @transaction.address %></span><br/>
+  <p>
+    <span style="float:left;margin-right:10px">Service: </span><span><%= TypesOfService.getname(@transaction.service_id) %></span><br/></p>
+<p>
+    <span style="float:left;margin-right:10px">Date:</span><span> <%= @transaction.date %></span><br/>
+   </p>
+   <p>
+    <span style="float:left;margin-right:10px">Time:</span><span><%= @transaction.time %></span>
+      </p>
+      <br/><br/>
+      <p> 
+     <span style="float:left;margin-right:10px">Description: </span><span><%= @transaction.description %></span><br/>
+ </p>
+ <p>
+      <span style="float:left;margin-right:10px">Address: </span><span><%= @transaction.address %></span><br/>
+  </p>
   

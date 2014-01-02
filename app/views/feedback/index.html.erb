@@ -1,0 +1,6 @@
+
+<% @all_feedbacks.each  do |f| %>
+<% for attribute in f.attributes.keys %>
+  <p><b><%= attribute.humanize %></b> <%= f.attributes[attribute].to_s %></p>
+<% end %>
+<% end %>

@@ -17,7 +17,7 @@
   
       <span style="float:left;margin-right:10px">Description: </span><%= f.text_area :feedback, :id => "feedback_description", :size => "30x5" %><br/>
       <span style="float:left;margin-right:10px">Rating: </span><%#= f.text_field :rating, :id => "feedback_rating", :class => "slider", handle => 'triangle' %>
-	<input type="text" class="slider" class="span2" value="" data-slider-min="0" data-slider-max="5" data-slider-step=".5" data-slider-value="[0]" data-slider-orientation="horizontal" data-slider-tooltip="show" data-slider-handle="square">
+	<input type="text" name="feedback[rating]" class="slider" class="span2" value="" data-slider-min="0" data-slider-max="5" data-slider-step=".5" data-slider-value="[0]" data-slider-orientation="horizontal" data-slider-tooltip="show" data-slider-handle="square">
 
       <br/>
   <%#= submit_tag 'Submit', :onclick => "clickevent();return false;" %>
@@ -27,7 +27,6 @@
 
 <script type="text/javascript">
 $('.slider').slider().on('slide', function(ev){
-
 });
 
 function clickevent()
