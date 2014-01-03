@@ -26,5 +26,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  mysql
   rails (= 2.3.17)
