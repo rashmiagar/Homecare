@@ -26,14 +26,14 @@
 		<% elsif req.status == 'closed' %>
 			<td>
 			<% if req.feedback_already_given?(req.transaction_id) %>
-				<%= link_to "Show Feedback", feedback_path(req.transaction_id) %> | 
+				<%= link_to "Show Feedback", feedback_path(req.transaction_id), :class => 'btn btn-warning btn-mini' %> | 
 			<% end %>
 			 <%= link_to "View", request_path(req.transaction_id), :class => 'btn btn-info btn-mini' %></td>
 		<% elsif req.status == 'processing' %>
-			<td><%= link_to "Complete", complete_request_path(req.transaction_id) %> | <%= link_to "View", request_path(req.transaction_id), :class => 'btn btn-mini' %></td>
+			<td><%= link_to "Complete", complete_request_path(req.transaction_id), :class => 'btn btn-success btn-mini' %> | <%= link_to "View", request_path(req.transaction_id), :class => 'btn btn-mini btn-info' %></td>
 		<%  else %>
 
-			<td><%= link_to "View", request_path(req.transaction_id) %></td>
+			<td><%= link_to "View", request_path(req.transaction_id), :class => 'btn btn-info btn-mini'  %></td>
 		<% end %>
 	
 	</tr>

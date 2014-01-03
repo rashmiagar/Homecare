@@ -17,4 +17,13 @@ class Userdetails < ActiveRecord::Base
 			Userdetails.all(:conditions => ["email like ?", "%#{querystring}%"])
 		end
 	end
+
+	def self.getname(id)
+		Userdetails.find(id).username
+
+	end
+
+	def is_active?
+		self.status=="active"
+	end
 end

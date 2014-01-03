@@ -22,4 +22,18 @@ class ReportController < ApplicationController
 		
 	end
 
+	def activate
+		user = Userdetails.find(params[:id])
+		user.update_attributes!(:status => "active")
+		flash[:notice] = "User #{user.username} activated!"
+		redirect_to :action => "usersreport"
+	end
+
+	def deactivate
+		user = Userdetails.find(params[:id])
+		user.update_attributes!(:status => "inactive")
+		flash[:notice] = "User #{user.username} deactivated successfully!"
+		redirect_to :action => "usersreport"
+	end
+
 end

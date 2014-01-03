@@ -4,6 +4,7 @@ class TypesOfService < ActiveRecord::Base
 	has_many :service_transactions
 
 	validates_uniqueness_of :service_name
+	validates_presence_of :service_name
 
 	def self.getname(id)
 		service = TypesOfService.find_by_id(id) 

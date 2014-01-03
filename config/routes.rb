@@ -57,6 +57,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :feedback
   map.resources :request, :collection => {:cancel => :get, :getlaborlist => :get}, :member => {:progress => [:get, :post], :complete => [:get, :post]}
   map.resources :report, :collection => {:requestreport => [:get, :post], :laborreport => [:get, :post], :usersreport => [:get, :post], :servicesreport => [:get, :post], :feedbackreport => :get}
+  map.resources :report, :member => {:activate => :get, :deactivate => :get}
 
 
   #map.resources :search, :only =>[:dosearch]

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131127000955) do
+ActiveRecord::Schema.define(:version => 20140102183633) do
 
   create_table "feedbacks", :force => true do |t|
     t.datetime "date"
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(:version => 20131127000955) do
     t.date   "birthday"
     t.string "email"
     t.string "phone"
+    t.string "status"
   end
 
 end

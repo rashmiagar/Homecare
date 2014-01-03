@@ -14,4 +14,11 @@ class Labor < ActiveRecord::Base
 		end
 
 	end
+
+	def self.getname(id)
+		labor = Labor.find_by_id(id) 
+		unless labor.blank?
+			return labor.labor_name
+		end
+	end
 end

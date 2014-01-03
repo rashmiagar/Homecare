@@ -19,7 +19,7 @@
       </li>
   </ul>
       <ul class="nav pull-right">
-        <li style="font-size:16px;font-weight:bold;">Welcome <%= session[:username]  %></li>
+        <li style="font-size:16px;font-weight:bold;"><a>Welcome <%= session[:username]  %></a></li>
         <li><%= link_to "Change Password", "/services/change_password" %></li>
        <li class="active"><%= link_to "Edit Profile", '/services/edituser' %></li>
        <li><%= link_to 'Logout', '/login/logout' %> </li>

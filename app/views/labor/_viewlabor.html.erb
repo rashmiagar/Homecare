@@ -22,8 +22,8 @@
 		<td><%= serv.address %></td>
 		<td><%= serv.phone %></td>
 		<td><%= serv.charges %></td>
-		<td><%= link_to "Feedbacks", feedback_by_labor_path(serv.id) %></td>
-		<td><%= link_to_remote "Remove", :url => labor_path(serv), :confirm => 'Are you sure?',:method => :delete, :class => 'btn btn-mini btn-danger' %> | <%= link_to "Deactivate" %></td>
+		<td><%= link_to "Feedbacks", feedback_by_labor_path(serv.id), :class => 'label label-info' %></td>
+		<td><%= link_to "Remove", labor_path(serv), :confirm => 'Are you sure?',:method => :delete, :class => 'btn btn-mini btn-danger' %> | <%= link_to "Deactivate", "", :class => 'btn btn-mini btn-warning' %></td>
 	</tr>
 <% end %>
 </tbody>

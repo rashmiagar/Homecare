@@ -2,6 +2,7 @@
    <div id="logincontent" class="container" style="<%= 'display:none' if controller.action_name== 'create_user'%>" >
         <span class="help-inline"><%= flash[:notice] %></span>
          <h2>Login</h2>
+         <%= image_tag("index.jpeg") %>
         <div class="myform">
            
         <% form_tag( login_path, :id => 'login_form', :name => 'login_form') do %>
@@ -9,7 +10,7 @@
             <input type="text" name="username"><br/>
             <%= label_tag 'password' %>
             <%= password_field_tag 'password' %><br/>
-            <%= submit_tag 'Login' , :onclick => "return validateLogin();", :class => "btn" %> 
+            <%= submit_tag 'Login' , :onclick => "return validateLogin();", :class => "btn btn-success" %> 
            <%end%>
     </div>
 </div>

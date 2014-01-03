@@ -1,6 +1,6 @@
 class FeedbackController < ApplicationController
 	layout "services"
-	:before_filter 
+	before_filter :getservices
 
 	def index
 		@all_feedbacks = Feedback.all
@@ -15,9 +15,10 @@ class FeedbackController < ApplicationController
 	def create
 		@feedback = Feedback.new(params[:feedback])
 		@feedback.date = Time.now
-		@feedback.labor_id = 0
+		@feedback.labor_id = ServiceTransactions.find_by_transaction_id(params[:id]).labor_id
 		@feedback.user_id = Userdetails.find_by_username(session[:username])
 		@feedback.transaction_id=params[:id]
+
 		#@feedback.feedback = "xyz"
 		#@feedback.rating = params[:rating]
 		
@@ -40,5 +41,11 @@ class FeedbackController < ApplicationController
 
 	def feedback_by_labor
 		@feedbacks = Feedback.find_all_by_labor_id( params[:id])		
+	end
+
+	private
+
+	def getservices
+		@services = TypesOfService.all(:select => "id, service_name")
 	end
 end

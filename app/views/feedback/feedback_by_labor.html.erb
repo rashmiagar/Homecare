@@ -1,5 +1,42 @@
-<% @feedbacks.each  do |f| %>
-<% for attribute in f.attributes.keys %>
-  <p><b><%= attribute.humanize %></b> <%= f.attributes[attribute].to_s %></p>
+
+<%# feedbacks ||= @feedbacks %>
+<% if @feedbacks.empty? %>
+	<h4>No feedbacks</h4>
+
+<% else %>
+<h2>Feedback for Labor <%= Labor.getname(@feedbacks.first.labor_id) %></h2>
+
+<table id="labortable" class="table table-bordered table-striped">
+<thead>
+<tr>
+	<th><b>Date</b></th>
+	<th><b>Transaction</b></th>
+	<th><b>User</b></th>
+	<th><b>Comments</b></th>
+	<th><b>Rating</b></th>
+</tr>
+</thead>
+<tbody>
+<% @feedbacks.each do |f| %>
+	<tr>
+		<td><%= f.date %></td>
+		<td><%= f.transaction_id %></td>
+		<td><%= Userdetails.getname(f.user_id) %></td>
+		<td><%= f.feedback %></td>
+		<td><%= f.rating %></td>
+	</tr>
 <% end %>
+</tbody>
+</table>
+
 <% end %>
+
+
+
+
+
+<%# @feedbacks.each  do |f| %>
+<%# for attribute in f.attributes.keys %>
+  <p><b><%#= attribute.humanize %></b> <%#= f.attributes[attribute].to_s %></p>
+<%# end %>
+<%# end %>

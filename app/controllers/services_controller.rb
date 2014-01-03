@@ -1,6 +1,6 @@
 class ServicesController < ApplicationController
  layout "services"
- before_filter :getservices, :only => [:show]
+ before_filter :getservices
 
   def index
     p "************"
@@ -25,7 +25,8 @@ class ServicesController < ApplicationController
   end
 
   def show
-    
+    @labors = Labor.find_all_by_types_of_service_id(params[:id])
+
   end
 
   def edit

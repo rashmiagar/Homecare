@@ -1,1 +1,25 @@
-This is show file
+<table id="labortable" class="table table-bordered table-striped">
+<thead>
+<tr>
+	<th><b>Labourer Id</b></th>
+	<th><b>Labourer Name</b></th>
+	<th><b>Service Type</b></th>
+	<th><b>Rating (Avg)</b></th>
+	<th><b>Feedbacks</b></th>
+</tr>
+</thead>
+<tbody>
+<% @labors.each do |serv| %>
+	<tr>
+		<td><%= serv.id %></td>
+		<td><%= serv.labor_name %></td>
+		<td><%= TypesOfService.getname(serv.types_of_service_id) %></td>
+		<td><%= Feedback.average_rating(serv.id) %></td>
+		<td><%= link_to "Feedbacks", feedback_by_labor_path(serv.id), :class => 'label label-info' %></td>
+	</tr>
+<% end %>
+</tbody>
+</table>
+
+
+

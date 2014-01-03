@@ -52,7 +52,7 @@ class LoginController < ApplicationController
     #   end
     # end
     @userdetails = Userdetails.find_by_username(params[:username])
-    if @userdetails
+    if @userdetails && @userdetails.is_active?
       if @userdetails.username == params[:username] && params[:password] == @userdetails.password
         flash[:notice] = "Login successfull"
         
@@ -61,15 +61,18 @@ class LoginController < ApplicationController
         else
           redirect_to :controller => 'services', :action => 'index', :userid => @userdetails.id
         end
-
+      else 
+        flash[:notice] = "Login failed. Username/Password invalid."
+        render :partial => "login", :layout => 'login'
         clear_flash_messages
-        return
-      end  
+      end
+    else
+      flash[:notice] = "User has been deactivated. Please contact administrator."
+      render :partial => "login", :layout => 'login'
     end
-    flash[:notice] = "Login failed. Username/Password invalid."
-    #redirect_to :action => 'index'
-    render :template => 'login/home'
-    clear_flash_messages
+    
+    
+    
   end
 
 def create_user

@@ -1,5 +1,5 @@
 
-<div id="bottompane">
+<div style="margin:25px">
 <span class = "help-inline"><%= flash[:notice] %> </span>
 <h2> User Report </h2>
 <table id="labortable" class="table table-bordered table-striped">
@@ -12,7 +12,7 @@
 	<th><b>Birthday</b></th>
 	<th><b>Email</b></th>
 	<th><b>Phone number </b></th>
-	<th><b></b></th>
+	<th><b>Action</b></th>
 </tr>
 </thead>
 <tbody>
@@ -24,7 +24,12 @@
 		<td><%= req.lastname %></td>
 		<td><%= req.birthday %></td>
 		<td><%= req.email %></td>
-		<td><%= req.phone %></td>		
+		<td><%= req.phone %></td>
+		<% if req.status == 'active' %>
+			<td><%= link_to "Deactivate",  deactivate_report_path(req.id), :class => 'btn btn-warning' %></td>
+		<% else %>
+			<td><%= link_to "Activate",   activate_report_path(req.id), :class => 'btn btn-success' %></td>
+		<% end %>
 	</tr>
 <% end %>
 </tbody>

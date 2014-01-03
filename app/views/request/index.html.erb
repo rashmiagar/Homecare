@@ -21,6 +21,7 @@
 <tr>
 	<th><b>Request No.</b></th>
 	<th><b>Service</b></th>
+	<th><b>Labor Name</b></th>
 	<th><b>Date</b></th>
 	<th><b>Time</b></th>
 	<th><b>Status</b></th>
@@ -32,6 +33,7 @@
 	<tr>
 		<td><%= req.transaction_id %></td>
 		<td><%= TypesOfService.getname(req.service_id) %></td>
+		<td><%= Labor.getname(req.labor_id) %></td>
 		<td><%= req.date%></td>
 		<td><%= req.time%></td>
 		<%= req.style_status_html req.status  %>

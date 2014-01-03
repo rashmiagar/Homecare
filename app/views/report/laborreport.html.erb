@@ -1,5 +1,5 @@
 
-<div id="bottompane">
+<div style="margin-left:25px;">
 <span class = "help-inline"><%= flash[:notice] %> </span>
 <h2> Labor Report </h2>
 <table id="labortable" class="table table-bordered table-striped">
@@ -17,7 +17,7 @@
 		<td><%= serv.id %></td>
 		<td><%= serv.labor_name %></td>
 		<td><%= TypesOfService.getname(serv.types_of_service_id) %></td>
-		<td><%= link_to_remote "Remove", :url => labor_path(serv), :confirm => 'Are you sure?',:method => :delete %> | <%= link_to "Deactivate" %></td>
+		<td><%= link_to "Remove", labor_path(serv), :confirm => 'Are you sure?',:method => :delete, :class => 'btn btn-danger' %> | <%= link_to "Deactivate",  '', :class => 'btn btn-warning' %></td>
 	</tr>
 <% end %>
 </tbody>

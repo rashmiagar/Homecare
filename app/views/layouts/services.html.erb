@@ -51,20 +51,32 @@
     
     .navbar
     .navbar-inner {
-      background-color: #0000ff;
+      background-color: #A8363D;
     }
 
     .navbar .nav > li > a {
       color: #ffffff;
-      text-shadow: 0 1px 0 #0000f0;
+      text-shadow: 0 1px 0 #ffffff;
     }
 
     .navbar .brand {
-      color: #22ee55;
-      text-shadow: 0 1px 0 #22ee55
+      color: #ffffff;
+      text-shadow: 0 0px 0 #ffffff;
     }
 
     table { empty-cells: show; }
+
+    input[type="text"],
+    input[type="password"] 
+        {
+            height: 30px;
+        }
+
+        .navbar .nav > li > a:focus,
+      .navbar .nav > li > a:hover {
+           color: #EB9DC6;
+           text-shadow: 0 1px 0 #EB9DC6;
+        }
   </style>
         <%= javascript_include_tag :defaults %>
         <%= javascript_include_tag 'bootstrap-datepicker' %>
