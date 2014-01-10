@@ -20,6 +20,7 @@ class ServicesController < ApplicationController
       flash[:notice] = "New service added!"
       redirect_to '/admin/addservice'
     else
+      flash[:notice] = @newservice.errors.full_messages
       render :template => '/admin/addservice', :layout => 'admin'
     end
   end
