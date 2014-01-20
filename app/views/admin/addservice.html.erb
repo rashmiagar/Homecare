@@ -3,7 +3,7 @@
 	<div class="row">
 		<div class="span9">
 		<span class = "help-inline alert-success"><%= flash[:notice] %> </span>
-		<%= error_messages_for :newservice %>
+		<%#= error_messages_for :newservice %>
 		<h2> Add Service </h2>
 		<%# form_tag( {:controller => 'admin', :action => "add_service" }, {:id => 'add_service_form', :name => 'add_service_form'} ) do %>
 		<%#= @newservice.errors.full_messages %>
@@ -16,7 +16,12 @@
 		<% end %>
 	</div>
 	<div class="span3">
-		<%= render :partial => 'viewservice', :locals => {:servicetypes => TypesOfService.all} %>
+		<%= render :partial => 'admin/viewservice', :locals => {:servicetypes => TypesOfService.all} %>
 	</div>
 </div>
 </div>
+
+<script type="text/javascript">
+
+
+</script>

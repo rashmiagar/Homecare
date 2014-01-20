@@ -9,36 +9,79 @@ width: 220px;
 border: 1px solid #cccccc;
 background-color: #ffffff;
 }
+
+#bottompane h1 {
+  
+
+}
+label.required:after {
+  content: "*";
+  color: red;
+}
+
+#errorpane {
+  color: red;
+}
 </style>
 
+<% transaction ||= @transaction %>
 <div id="bottompane">
+  <div id="errorpane">
     <%= flash[:notice] %>
+    <% if transaction && transaction.errors.any? %>
+    <ul>
+      <% transaction.errors.full_messages.each  do |message| %>
+        <li> <%= message %> </li>
+        <% end %>
+    </ul>
+    <% end %>
+  </div>
   <h1> Create Request </h1>
 <div class="editform">
   <p>
-  <% form_for(:service_transactions, :url =>"/request" , :method => "post") do |f| %>
+  <% form_for (@service_transactions, :url =>"/request") do |f| %>
   
-    <span style="float:left;margin-right:10px">Service: </span><%= select_tag(:service_id, options_from_collection_for_select(@services, 'id', 'service_name', 1), { :id => "serviceselect" }) %><br/>
+    <span style="float:left;margin-right:10px"><label class="required">Service:</label></span>
 
+<%#= select("service_transactions", :service_id, TypesOfService.all.collect{ |s| [s.service_name, s.id]}, {:include_blank => 'Select a service', :id => "serviceselect"}) %>
 
+    <%= select_tag(:service_id, "<option value="">Select Service</option>"+options_from_collection_for_select(@services, 'id', 'service_name'), { :id => "serviceselect"}) %><br/>
+
+<!--<span style="color:red;">*</style>-->
     <div id="labordiv" >
       <span style="float:left;margin-right:10px">Labor: </span><%= f.select(:labor_id, options_for_select([['Select a labor', '']]), {}, {:disabled => true}) %><br/>
     </div>
 
 
-    <span style="float:left;margin-right:10px">Date:</span>
-    <% my_select = f.date_select(:date, :prompt => true) %>
+    <span style="float:left;margin-right:10px">
+      <label class="required"> Date:</label>
+    </span>
+    
+    <% my_select = f.date_select(:date, :prompt => true, :start_year => Time.now.year, :end_year => Time.now.year+2) %>
     <%= my_select.gsub(/select/, "select class='input'") %><br/>
 
-    <span style="float:left;margin-right:10px">Time:</span>
+    <span style="float:left;margin-right:10px">
+      <label class="required">Time:</lable> <span style="color:blue;width:250px">(should be between 8 Hrs and 20 Hrs)</span>
+    </span>
     
     <% my_select = select_time(Time.now, :prefix => "time", :ignore_date => true, :time_separator => ': ', :prompt => true) %>
-    <%= my_select.gsub(/select/, "select class='input'") %> <br/> <!-- this is to add css property to reduce the width -->
+    <%= my_select.gsub(/select/, "select class='input'") %> 
+
+    <br/> <!-- this is to add css property to reduce the width -->
      
-     <span style="float:left;margin-right:10px">Description: </span><%= f.text_area 'description', :size=>"30x5" %><br/>
-      <span style="float:left;margin-right:10px">Address: </span><%= f.text_field 'address' %><br/>
+     <span style="float:left;margin-right:10px">
+      <label class="required"> Description:</label><br/>(max 200 chars)
+      
+    </span><%= f.text_area 'description', :size=>"30x5", :maxlength => 200 %><br/>
+     
+    <span style="float:left;margin-right:10px">
+      <label class="required">Address: </label>
+    </span><%= f.text_field 'address' %><br/>
+  <br/>
   <%#= submit_tag 'Submit', :onclick => "clickevent();return false;" %>
-  <%= submit_tag 'Submit', :confirm => "Your request is in progress and your service request no is XXXX", :class=> "btn" %>
+  <div style="margin-left: 200px">
+    <%= submit_tag 'Submit', :class=> "btn btn-info" %>
+</div>
   <% end %>
 </p>
 </div>
@@ -92,7 +135,9 @@ $("div select#serviceselect").on("change", function(){
 
 function clickevent()
 {
+
  alert('Your request is in progress and  your service request no is XXXXX');
+
 }
 
 

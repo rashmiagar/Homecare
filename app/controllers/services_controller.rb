@@ -1,5 +1,8 @@
 class ServicesController < ApplicationController
  layout "services"
+ before_filter :current_user
+  before_filter :check_admin, :only => [:new, :create, :edit, :destroy, :update]
+  before_filter :check_notadmin, :only => [:show]
  before_filter :getservices
 
   def index
@@ -20,6 +23,7 @@ class ServicesController < ApplicationController
       flash[:notice] = "New service added!"
       redirect_to '/admin/addservice'
     else
+      flash[:notice] = @newservice.errors.full_messages
       render :template => '/admin/addservice', :layout => 'admin'
     end
   end

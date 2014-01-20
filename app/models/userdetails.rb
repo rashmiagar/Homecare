@@ -6,6 +6,7 @@ class Userdetails < ActiveRecord::Base
 	validates_presence_of :username, :password, :email
 
 	validates_confirmation_of :password
+	validates_format_of :email, :with => /^.+@.+\..+$/
 
 
 	def self.query(criteria, querystring)

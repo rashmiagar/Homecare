@@ -12,8 +12,12 @@ class LoginController < ApplicationController
     if session[:username] 
       @userdetails = Userdetails.find_by_username(session[:username])
     end
-     #render :template => 'login/home'
-      render :partial => 'login', :layout => 'login'
+     #render :partial => 'login', :layout => 'login'
+     respond_to do |format|
+      format.html { render :partial => 'login', :layout => 'login'}
+      format.js {  render :template => 'login/login.js.erb', :layout => false}
+     end
+    
     clear_flash_messages
   end
 
@@ -32,7 +36,7 @@ class LoginController < ApplicationController
     else 
       flash[:notice] = "Update failed"
     end
-    render :template => '/services/edituser', :layout => "services"
+    render :js => '/services/edituser', :layout => "services"
   end
 
   def signin
@@ -98,7 +102,7 @@ def create_user
     render :partial => "login"
     return
   else
-    flash[:notice] = @userdetails.errors.full_messages
+    #flash[:notice] = @userdetails.errors.full_messages
     render :template => "login/newuser"
     clear_flash_messages
     return

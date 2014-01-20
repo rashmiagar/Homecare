@@ -1,5 +1,7 @@
 class FeedbackController < ApplicationController
 	layout "services"
+	
+	before_filter :current_user
 	before_filter :getservices
 
 	def index

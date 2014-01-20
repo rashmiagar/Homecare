@@ -1,6 +1,9 @@
 class ReportController < ApplicationController
 	layout "admin"
 
+	before_filter :current_user
+	before_filter :check_admin
+	
 	def requestreport
 		@requests = ServiceTransactions.find(:all)
 	end

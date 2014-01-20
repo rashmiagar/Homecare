@@ -1,8 +1,13 @@
-<div id="bottompane">
-   <div id="logincontent" class="container" style="<%= 'display:none' if controller.action_name== 'create_user'%>" >
+<a class='inline' href="#inline_content">[X]</a>
+
+<div id="colorbox"  style="display: none; visibility: visible; top: 88px; left: 281px; position: absolute; width: 742px; height: 513px; opacity: 1; cursor: auto;">
+  <div style='display:none'>
+     <div id='inline_content' class="container" style="<%= 'display:none' if controller.action_name== 'create_user'%>" >
         <span class="help-inline"><%= flash[:notice] %></span>
+         <div style="float:left">
          <h2>Login</h2>
-         <%= image_tag("index.jpeg") %>
+     </div>
+         <%= image_tag("index.jpeg", :size => "100x50") %>
         <div class="myform">
            
         <% form_tag( login_path, :id => 'login_form', :name => 'login_form') do %>
@@ -15,3 +20,12 @@
     </div>
 </div>
 </div>
+
+
+<script>
+  $(document).ready(function(){
+    $(".inline").colorbox({inline:true, width:"500"});
+  });
+</script>
+
+

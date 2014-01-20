@@ -1,5 +1,8 @@
 class RequestController < ApplicationController
  layout "services" 
+
+ 	before_filter :current_user
+ 	before_filter :check_notadmin
 	before_filter :change_layout, :getservices
 
 
@@ -11,47 +14,54 @@ class RequestController < ApplicationController
 	def new
 		@services = TypesOfService.all
 
-		#@transaction = ServiceTransactions.new
+		@service_transactions = ServiceTransactions.new
 	end
 
 	def create
+
 		params[:service_transactions][:time] = params[:time][:hour] + ":" + params[:time][:minute]
+		puts "$$$$$$$$$$$"
 		puts params[:service_transactions].inspect
-		@transaction = ServiceTransactions.new(params[:service_transactions])
-		@transaction.service_id = params["service_id"]
+		@service_transactions = ServiceTransactions.new(params[:service_transactions])
+	
+		@service_transactions.service_id = params["service_id"]
 		
 		#@transaction.date = params[:service_transactions]["date(1i)"].to_i
 		#@transaction.time = ""
 		#@transaction.labor_id = 0
-		@transaction.user_id = Userdetails.find_by_username(session[:username]).id
+		@service_transactions.user_id = Userdetails.find_by_username(session[:username]).id
 		p "********#{Userdetails.find_by_username(session[:username]).id} #{session[:username]}"
 		#@transaction.description = "xyz"
 		#@transaction.address = "xyx"
-		@transaction.status = 'open'
-		@transaction.transaction_id = ServiceTransactions.generate_trans_id
- 	    if @transaction.valid?
-
-	    	p "**********"
-
-			puts @transaction.inspect
-
-	      @transaction.save!
-	      flash[:notice] = "New request added!"
+		@service_transactions.status = 'open'
+		@service_transactions.transaction_id = ServiceTransactions.generate_trans_id
+		p @service_transactions.errors.full_messages
+		respond_to do |format|
+    		if @service_transactions.valid?
+	    #	p "**********"
+		#	puts @transaction.inspect
+	     	@service_transactions.save!
+	      	flash[:notice] = "New request added!"
 	    #   respond_to do |format|
-	  		# format.js {
-	  		# 	render :action => 'index.js.erb'
-	  			
-	  		# }
+	  		 format.js {
+	  		 	render :action => 'index.js.erb'
+	  		 }
 	  		# end
-	      redirect_to :action => "index"
-	    else
-	    	flash[:notice] = "Request failed"
-	      render :action => "create"
+	      	format.html {
+      	    	redirect_to :action => "index"
+	   		}
+	    	else
+			format.html {
+				flash[:notice] = "Request failed"
+	      		render :template => "request/new"
+	    	}
+	    	format.js { p "hi ***********"}
+	    	end
 	    end
 	end
 
 	def show 
-		@transaction = ServiceTransactions.find_by_transaction_id(params[:id])
+		@service_transactions = ServiceTransactions.find_by_transaction_id(params[:id])
 		
 	end
 

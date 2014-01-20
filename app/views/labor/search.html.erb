@@ -21,7 +21,7 @@ table.searchtable {
 			<table class="searchtable" id="searchtableid"> <!-- cellpadding="10px" -->
 			<tr>
 				<td>
-				<%= radio_button_tag(:search, "name", :checked) %>
+				<%= radio_button_tag(:search, "User_name", :checked) %>
 				<span style="float:right"><%= label_tag(:search_name, "name") %></span>&nbsp;
 			</td>
 			<!-- <td>
@@ -29,11 +29,11 @@ table.searchtable {
 				<span style="float:right"><%= label_tag(:search_city, "city") %></span>&nbsp;
 			</td> -->
 			<td>
-				<%= radio_button_tag(:search, "phone") %>
-				<span style="float:right"><%= label_tag(:search_phone, "phone number") %></span>&nbsp;
+				<%= radio_button_tag(:search, "User_phone") %>
+				<span style="float:right"><%= label_tag(:search_phone, "phone") %></span>&nbsp;
 			</td>
 			<td>
-				<%= radio_button_tag(:search, "email") %>
+				<%= radio_button_tag(:search, "User_email") %>
 				<span style="float:right"><%= label_tag(:search_email, "email") %></span>&nbsp;
 			</td>
 			</tr>
@@ -44,7 +44,7 @@ table.searchtable {
 				<%= select_tag(:searchstatus, options_for_select([['active', 1],['inactive', 2]]), :size => 2) %>
 			</div>
 			<div id="textboxfield">
-				<input id="searchinput" type="text" name="searchinput" data-provide="typehead"></input><br/>
+				<input id="searchinput" type="text" name="searchinput" data-provide="typehead" class="User_name"></input><br/>
 			</div>
 		
 			<input name="submit" class="btn" type="submit" onclick="clickevent();return false;" value="Search">
@@ -124,12 +124,36 @@ $(document).on('click', "input:radio[value='Request_service']", function() {
 
 });
 
+
+$(document).on('click', "input:radio", function(){
+	$('#textboxfield input').val("");
+
+	$('#textboxfield input').attr("name", $("input:radio:checked").val());
+
+});
+
+$(document).on('click', "input:radio[value='User_phone'], input:radio[value='Labourer_phone']", function(){
+	
+	$(document).on('keyup', "#textboxfield input[name='User_phone'], #textboxfield input[name='Labourer_phone']", (function()
+	 {
+	 	
+		if (/\D/g.test(this.value))
+    	{
+    		//alert(this.value);
+			this.value = this.value.replace(/\D/g, '');
+		}
+}));
+});
+
 $(document).on('click', "input:radio[value!='status']", function() { 
 //alert("here");
 	$('#statusbox').hide();
 	$('#textboxfield').show();
 
 });
+
+
+
 
 
 

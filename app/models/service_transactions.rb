@@ -4,6 +4,25 @@ class ServiceTransactions < ActiveRecord::Base
 	belongs_to :user, :class_name => "Userdetails", :foreign_key => "user_id", :dependent => :destroy  # with this we can do ServiceTransactions.first.user
 	belongs_to :labor
 
+	validates_presence_of :service_id, :date, :time, :description, :address, :on => :create
+	validate :check_time, :on => :create
+
+
+	def check_time
+
+		if time && (time.hour < 8 || time.hour > 20)
+			errors.add(:time, "has to be between 8 AM and 8 PM")
+		end
+	end
+
+
+	def check_date
+
+		if date && (date.year < Date.today.year)
+			errors.add(:date, "cannot be in the past")
+		end
+	end
+
 	def self.generate_trans_id
 		#d = Date.today
 		d=Time.now

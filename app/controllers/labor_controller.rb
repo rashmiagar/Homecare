@@ -2,8 +2,11 @@ class LaborController < ApplicationController
 	include LaborHelper
 	layout 'admin'
 
+	before_filter :current_user
+	before_filter :check_admin, :only => [:search, :new, :create, :edit, :destroy]
 	before_filter :getservice, :clear_flash_messages
 	before_filter :getlabor, :except => [:new, :create]
+
 	before_filter :getcriteria, :only => [:dosearch, :search]
 
 	def new

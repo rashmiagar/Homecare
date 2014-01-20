@@ -1,5 +1,7 @@
 class AdminController < ApplicationController
-	before_filter :get_user
+	before_filter :current_user
+  before_filter :check_admin
+  before_filter :get_user
 
 def save_password
   usrdetails = Userdetails.find_by_username(session[:username])
